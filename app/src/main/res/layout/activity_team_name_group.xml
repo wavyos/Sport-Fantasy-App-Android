@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.TeamNameGroupActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <include layout="@layout/custom_app_bar"/>
+
+    <RelativeLayout
+        android:background="@mipmap/background_app_af"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:id="@+id/iv_team"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ellipse7" />
+
+        <TextView
+            android:id="@+id/tv_team_name"
+            android:layout_toRightOf="@+id/iv_team"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:text="Team Name Group"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="-45dp">
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="@color/white"
+         android:orientation="vertical">
+
+
+         <RelativeLayout
+             android:background="@drawable/chat_right"
+             android:layout_width="350dp"
+             android:layout_height="70dp"
+             android:orientation="vertical"
+             android:layout_marginLeft="30dp"
+             android:layout_marginTop="30dp"
+             >
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Hatton"
+                 android:textColor="#3F3F3F"
+                 android:textSize="14dp"
+                 android:layout_marginLeft="30dp"
+                 android:fontFamily="@font/roboto_regular"
+                 android:layout_marginTop="9dp"
+                 />
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:fontFamily="@font/roboto_regular"
+                 android:text="10:20AM"
+                 android:layout_marginTop="15dp"
+                 android:layout_marginLeft="260dp"
+                 android:textColor="#515151"
+                 android:textSize="14dp"
+                 />
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="How are you?"
+                 android:layout_marginTop="34dp"
+                 android:textColor="#000000"
+                 android:textSize="14dp"
+                 android:fontFamily="@font/roboto_regular"
+                 android:layout_marginLeft="30dp"
+                 />
+         </RelativeLayout>
+         <RelativeLayout
+             android:background="@drawable/chat_left"
+             android:layout_width="350dp"
+             android:layout_height="70dp"
+             android:orientation="vertical"
+             android:layout_marginLeft="5dp"
+             android:layout_marginTop="15dp"
+             >
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Alex"
+                 android:textColor="#3F3F3F"
+                 android:fontFamily="@font/roboto_regular"
+                 android:textSize="14dp"
+                 android:layout_marginLeft="25dp"
+                 android:layout_marginTop="13dp"
+                 />
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="10:20AM"
+                 android:layout_marginTop="20dp"
+                 android:layout_marginLeft="260dp"
+                 android:textColor="#515151"
+                 android:textSize="14dp"
+                 android:fontFamily="@font/roboto_regular"
+                 />
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Hey, I am fine"
+                 android:layout_marginTop="35dp"
+                 android:textColor="#000000"
+                 android:fontFamily="@font/roboto_regular"
+                 android:textSize="14dp"
+                 android:layout_marginLeft="25dp"
+                 />
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:background="@drawable/chat_right"
+             android:layout_width="350dp"
+             android:layout_height="70dp"
+             android:orientation="vertical"
+             android:layout_marginLeft="30dp"
+             android:layout_marginTop="10dp"
+             >
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="George Rudollf"
+                 android:fontFamily="@font/roboto_regular"
+                 android:textColor="#3F3F3F"
+                 android:textSize="14dp"
+                 android:layout_marginLeft="30dp"
+                 android:layout_marginTop="9dp"
+                 />
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="10:20AM"
+                 android:fontFamily="@font/roboto_regular"
+                 android:layout_marginTop="19dp"
+                 android:layout_marginLeft="260dp"
+                 android:textColor="#515151"
+                 android:textSize="14dp"
+                 />
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Yeah I am waiting for this"
+                 android:layout_marginTop="34dp"
+                 android:fontFamily="@font/roboto_regular"
+                 android:textColor="#000000"
+                 android:textSize="14dp"
+                 android:layout_marginLeft="30dp"
+                 />
+         </RelativeLayout>
+         <RelativeLayout
+             android:background="@drawable/chat_left"
+             android:layout_width="350dp"
+             android:layout_height="70dp"
+             android:orientation="vertical"
+             android:layout_marginLeft="5dp"
+             android:layout_marginTop="15dp"
+             >
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Hatton"
+                 android:textColor="#3F3F3F"
+                 android:textSize="14dp"
+                 android:layout_marginLeft="25dp"
+                 android:fontFamily="@font/roboto_regular"
+                 android:layout_marginTop="13dp"
+                 />
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="10:20AM"
+                 android:layout_marginTop="20dp"
+                 android:fontFamily="@font/roboto_regular"
+                 android:layout_marginLeft="260dp"
+                 android:textColor="#515151"
+                 android:textSize="14dp"
+                 />
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="How are you?"
+                 android:fontFamily="@font/roboto_regular"
+                 android:layout_marginTop="35dp"
+                 android:textColor="#000000"
+                 android:textSize="14dp"
+                 android:layout_marginLeft="25dp"
+                 />
+         </RelativeLayout>
+         <RelativeLayout
+             android:background="@drawable/chat_right"
+             android:layout_width="350dp"
+             android:layout_height="70dp"
+             android:orientation="vertical"
+             android:layout_marginLeft="30dp"
+             android:layout_marginTop="10dp"
+             >
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Hatton"
+                 android:textColor="#3F3F3F"
+                 android:textSize="14dp"
+                 android:fontFamily="@font/roboto_regular"
+                 android:layout_marginLeft="30dp"
+                 android:layout_marginTop="9dp"
+                 />
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:fontFamily="@font/roboto_regular"
+                 android:text="10:20AM"
+                 android:layout_marginTop="15dp"
+                 android:layout_marginLeft="260dp"
+                 android:textColor="#515151"
+                 android:textSize="14dp"
+                 />
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="How are you?"
+                 android:layout_marginTop="34dp"
+                 android:textColor="#000000"
+                 android:fontFamily="@font/roboto_regular"
+                 android:textSize="14dp"
+                 android:layout_marginLeft="30dp"
+                 />
+         </RelativeLayout>
+         <RelativeLayout
+             android:background="@drawable/chat_left"
+             android:layout_width="350dp"
+             android:layout_height="70dp"
+             android:orientation="vertical"
+             android:layout_marginLeft="5dp"
+             android:layout_marginTop="15dp"
+             >
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Hatton"
+                 android:textColor="#3F3F3F"
+                 android:textSize="14dp"
+                 android:fontFamily="@font/roboto_regular"
+                 android:layout_marginLeft="25dp"
+                 android:layout_marginTop="13dp"
+                 />
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:fontFamily="@font/roboto_regular"
+                 android:text="10:20AM"
+                 android:layout_marginTop="20dp"
+                 android:layout_marginLeft="260dp"
+                 android:textColor="#515151"
+                 android:textSize="14dp"
+                 />
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="How are you?"
+                 android:layout_marginTop="35dp"
+                 android:textColor="#000000"
+                 android:fontFamily="@font/roboto_regular"
+                 android:textSize="14dp"
+                 android:layout_marginLeft="25dp"
+                 />
+         </RelativeLayout>
+         <RelativeLayout
+             android:background="@drawable/chat_right"
+             android:layout_width="350dp"
+             android:layout_height="70dp"
+             android:orientation="vertical"
+             android:layout_marginLeft="30dp"
+             android:layout_marginTop="10dp"
+             >
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Hatton"
+                 android:textColor="#3F3F3F"
+                 android:fontFamily="@font/roboto_regular"
+                 android:textSize="14dp"
+                 android:layout_marginLeft="25dp"
+                 android:layout_marginTop="9dp"
+                 />
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:fontFamily="@font/roboto_regular"
+                 android:text="10:20AM"
+                 android:layout_marginTop="15dp"
+                 android:layout_marginLeft="260dp"
+                 android:textColor="#515151"
+                 android:textSize="14dp"
+                 />
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="How are you?"
+                 android:layout_marginTop="34dp"
+                 android:textColor="#000000"
+                 android:fontFamily="@font/roboto_regular"
+                 android:textSize="14dp"
+                 android:layout_marginLeft="25dp"
+                 />
+         </RelativeLayout>
+
+
+     </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:backgroundTint="@color/white"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:background="@drawable/chat_box">
+
+        <EditText
+            android:layout_width="335dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:fontFamily="@font/roboto_regular"
+            android:hint="@string/send_message"
+            android:textSize="18dp"
+            android:background="#00FFFFFF"
+            android:importantForAutofill="no" />
+
+        <ImageView
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icon_metro_paper_plane"
+            android:layout_marginLeft="4dp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

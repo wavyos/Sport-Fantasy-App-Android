@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="315dp"
+    android:layout_height="394dp"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="15dp"
+            app:cardMaxElevation="10dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="25dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:gravity="center"
+                        android:text="@string/join_league_with_code"
+                        android:textSize="18sp" />
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_invite_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_weight="1"
+                        android:outlineSpotShadowColor="@color/black"
+                        app:cardBackgroundColor="@color/bg"
+                        app:cardCornerRadius="10dp"
+                        app:cardPreventCornerOverlap="true">
+
+                        <EditText
+                            android:id="@+id/edt_invite_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@color/white"
+                            android:fontFamily="@font/roboto_regular"
+                            android:gravity="start"
+                            android:padding="10dp"
+                            android:drawableStart="@color/white"
+                            android:drawablePadding="3dp"
+                            android:singleLine="true"
+                            android:hint="@string/please_enter_your_code_here"
+                            android:textColor="@color/bg"
+                            android:textSize="15sp" />
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_weight="1"
+                        android:outlineAmbientShadowColor="@color/bg"
+                        android:outlineSpotShadowColor="@color/bg"
+                        app:cardMaxElevation="10dp"
+                        android:elevation="10dp"
+                        app:cardElevation="10dp"
+                        app:cardBackgroundColor="@color/bg"
+                        app:cardCornerRadius="25dp"
+                        app:cardPreventCornerOverlap="true">
+
+                        <TextView
+                            android:id="@+id/tv_join_league"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:clickable="true"
+                            android:focusable="false"
+                            android:fontFamily="@font/roboto_regular"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:text="@string/join_league"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp" />
+
+
+                </LinearLayout>
+
+
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_closed"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="-5dp"
+        android:clickable="true"
+        android:padding="8dp"
+        android:src="@drawable/ic_baseline_close_24_white"
+        android:tint="@color/bg"
+        app:civ_border_color="@color/bg"
+        app:civ_border_width="2dp"
+        app:civ_circle_background_color="@color/bg"
+        tools:ignore="MissingConstraints" />
+
+</RelativeLayout>

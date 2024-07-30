@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Fragment.newFlow.SelectPlayerFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <!--    10 no Screen-->
+
+        <include layout="@layout/custom_app_bar" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <!--            <androidx.cardview.widget.CardView-->
+            <!--                android:id="@+id/cv_search"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginStart="20dp"-->
+            <!--                android:layout_marginEnd="20dp"-->
+            <!--                app:cardBackgroundColor="@color/white"-->
+            <!--                app:cardCornerRadius="10dp">-->
+
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:orientation="horizontal">-->
+
+            <!--                    <AutoCompleteTextView-->
+            <!--                        android:id="@+id/act_search"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_gravity="center_vertical"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:singleLine="true"-->
+            <!--                        android:imeOptions="actionSearch"-->
+            <!--                        android:alpha="0.6"-->
+            <!--                        android:background="@color/white"-->
+            <!--                        android:fontFamily="@font/roboto_medium"-->
+            <!--                        android:hint="@string/search_player"-->
+            <!--                        android:padding="10dp" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/iv_search"-->
+            <!--                        android:layout_width="50dp"-->
+            <!--                        android:layout_height="50dp"-->
+            <!--                        android:layout_gravity="center_vertical"-->
+            <!--                        android:padding="10dp"-->
+            <!--                        android:src="@drawable/ic_search" />-->
+
+
+            <!--                </LinearLayout>-->
+
+
+            <!--            </androidx.cardview.widget.CardView>-->
+
+            <TextView
+                android:id="@+id/tv_salary_cap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:alpha="0.6"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="start"
+                android:paddingHorizontal="15dp"
+                android:text="Salary Cap:"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/tveagueame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_salary_cap"
+                android:layout_marginHorizontal="20dp">
+
+                <TextView
+                    android:id="@+id/tv_league_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tveagueame"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                app:cardBackgroundColor="#D9D9D9"
+                app:cardCornerRadius="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_search"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:contentDescription="@string/search"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_search" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/act_search"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="#D9D9D9"
+                        android:padding="8dp"
+                        android:textSize="14sp"
+                        tools:ignore="LabelFor" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tveagueame"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="20dp"
+                android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_down_24"
+                android:visibility="invisible"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Spinner
+                        android:id="@+id/act_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_centerInParent="true"
+                        android:background="@android:color/transparent"
+                        android:clickable="true"
+                        android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_down_24"
+                        android:drawableTint="@color/bg"
+                        android:focusable="false"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:imeOptions="actionGo"
+                        android:spinnerMode="dropdown"
+                        android:textAlignment="center"
+                        android:textColor="@color/bg"
+                        android:textColorHint="@color/bg"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="15dp"
+                        android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+                        app:tint="@color/bg" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_new_player_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:paddingBottom="80dp"
+            android:scrollbars="none" />
+
+    </LinearLayout>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_progress"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerInParent="true"
+        android:repeatCount="infinite"
+        android:src="@mipmap/ic_launcher_app_main_round"
+        android:visibility="gone"
+        app:civ_border_width="1dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="start"
+        android:background="@drawable/rounded_edittext"
+        android:backgroundTint="@color/bg"
+        android:layout_margin="15dp"
+        android:id="@+id/btn_continue_drafting"
+        android:padding="15dp"
+        android:textSize="16sp"
+        android:drawableEnd="@drawable/go_right_arrow"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Continue Drafting"
+        android:textColor="@color/white"
+        android:textStyle="bold"                 />
+
+</RelativeLayout>

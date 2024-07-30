@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.newFlow.SettingsFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/sports_fantasy_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_baseline_arrow_back_24"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_name_app"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="70dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/app_name"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?attr/actionBarSize">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_invite_friends"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/rounded_edittext"
+                android:drawableEnd="@drawable/outline_emoji_emotions_24"
+                android:fontFamily="@font/roboto_medium"
+                android:hint="@string/str_setting_invite_friends"
+                android:padding="10dp"
+                android:textColorHint="@color/text_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_change_league_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/rounded_edittext"
+                android:drawableEnd="@drawable/outline_edit_24"
+                android:fontFamily="@font/roboto_medium"
+                android:hint="League Name"
+                android:padding="10dp"
+                android:textColor="@color/text_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_max_players"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/rounded_edittext"
+                android:drawableEnd="@drawable/outline_emoji_emotions_24"
+                android:fontFamily="@font/roboto_medium"
+                android:padding="10dp"
+                android:text="@string/str_setting_max_players"
+                android:textColor="@color/text_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/roboto_bold"
+                android:paddingVertical="10dp"
+                android:text="@string/str_setting_members"
+                android:textColor="@color/text_color"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_max_player_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:itemCount="5"
+                tools:listitem="@layout/raw_max_player_item" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_delete_league"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="15dp"
+        android:background="@drawable/rounded_edittext"
+        android:backgroundTint="#D32929"
+        android:drawableEnd="@drawable/_ic_close_"
+        android:drawableTint="@color/white"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="@string/str_setting_delete_league"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+</FrameLayout>

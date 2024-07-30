@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="bg">#EB5902</color>
+    <color name="green">#11b211</color>
+    <color name="text_button_main">#FDEEDC</color>
+    <color name="main_activity_bg">#E8EEF4</color>
+    <color name="text_color">#FF000000</color>
+    <color name="matchup_highlight">#AEB8FF</color>
+
+    <color name="text_color_pg">#171531</color>
+    <color name="stroke_color">#6D6D6D</color>
+    <color name="row_even_color">#F3F3F3</color>
+
+</resources>

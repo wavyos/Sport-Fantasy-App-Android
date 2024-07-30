@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.SingleMessageActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/custom_app_bar"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bg_app_bar">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/cv_users"
+                android:layout_width="38dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="50dp"
+                app:civ_border_color="@color/white"
+                android:src="@mipmap/ic_launcher_app_main_round"
+                android:layout_height="38dp"/>
+
+            <TextView
+                android:id="@+id/tv_team_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto_medium"
+                android:textSize="24dp"
+                android:textColor="#344356"
+                android:layout_toRightOf="@+id/cv_users"
+                 />
+
+        </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="-90dp"
+        android:background="@color/white">
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:background="@drawable/send_message_bg"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/edt_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/send_message"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/roboto_medium"
+            android:textSize="14sp"
+            android:singleLine="true"
+            android:padding="10dp"
+            android:layout_marginEnd="50dp"
+            android:alpha="0.5"
+            android:layout_marginStart="10dp"
+            android:background="@color/white"/>
+
+        <ImageView
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/send_message"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

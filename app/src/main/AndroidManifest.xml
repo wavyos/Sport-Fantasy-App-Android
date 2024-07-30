@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32"
+        tools:ignore="ScopedStorage" />
+    <dist:module dist:instant="true" />
+
+
+    <application
+        android:name=".Activities.App"
+        android:allowBackup="true"
+        android:allowClearUserData="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_logo_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_logo_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SPORTSFANTASY"
+        android:useEmbeddedDex="true"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activities.BottomNavigationActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.OnboardingActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.DemoActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Activities.StandingActivity"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Activities.ChatActivity"
+            android:exported="false"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Activities.SelectPlayerActivity"
+            android:exported="false"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Activities.TestActvity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Activities.LeagueDetailsActivity"
+            android:exported="false"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.EditTeamManagerActivity"
+            android:exported="false"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.TeamNameGroupActivity"
+            android:exported="false"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.ForgotPasswordActivity"
+            android:exported="true"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.TeamActivity"
+            android:exported="true"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.SingleMessageActivity"
+            android:exported="true"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.MessageBoardActivity"
+            android:exported="true"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.LeagueManagerToolActivity"
+            android:exported="true"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.SelectPGLeagueActivity"
+            android:exported="true"
+            android:label="@string/league_name"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.SPORTSFANTASY.NoActionBar" />
+        <activity
+            android:name=".Activities.LeagueActivity"
+            android:exported="true"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.CreateLeagueActivity"
+            android:exported="true"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.NotificationAlertActivity"
+            android:exported="true"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:exported="true"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.SplashScreenActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter
+                android:autoVerify="true"
+                android:label="DeepLink">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.unityofsouthgujarat.in"
+                    android:pathPrefix="/gallary.php"
+                    android:scheme="https" />
+            </intent-filter>
+            <intent-filter
+                android:autoVerify="true"
+                android:label="DeepLink">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.google.com"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.RegisterActivity"
+            android:exported="true"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.ChoiceActivity"
+            android:exported="true"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.MainActivity"
+            android:exported="true"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+
+            <!--
+                          <meta-data
+                          android:name="android.app.lib_name"
+                          android:value="" />
+            -->
+
+        </activity>
+        <activity
+            android:name=".Activities.PgUserActivity"
+            android:exported="true"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.EditBasicLeagueInfoActivity"
+            android:exported="true"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".notification.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service> <!-- <meta-data -->
+        <!-- android:name="com.google.firebase.messaging.default_notification_icon" -->
+        <!-- android:resource="@drawable/threadlothes_ic" /> -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/text_color_pg" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+    </application>
+
+</manifest>

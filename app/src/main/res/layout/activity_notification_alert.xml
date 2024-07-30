@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8EEF4"
+    android:orientation="vertical"
+    tools:context=".Activities.NotificationAlertActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginTop="112dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/notify_alert"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:textSize="30sp"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center"
+        android:text="@string/notifications"/>
+
+    <TextView
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:textSize="20sp"
+        android:fontFamily="@font/roboto_regular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/stay_notified_about_new_course_updates_scoreboard_stats_and_new_friend_follows"/>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="142dp"
+        android:layout_marginTop="57dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:outlineSpotShadowColor="@color/black"
+        app:cardBackgroundColor="@color/bg"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="10dp"
+        app:cardPreventCornerOverlap="true">
+
+        <TextView
+            android:id="@+id/tv_allow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="@string/allow"
+            android:textSize="16sp"
+            android:fontFamily="@font/roboto_bold"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            app:drawableRightCompat="@drawable/ic_baseline_arrow_circle_right_24" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/skip"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:textAllCaps="true"
+        android:layout_marginTop="46dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:fontFamily="@font/roboto_bold"
+        android:alpha="0.6"
+        android:text="@string/str_skip"/>
+
+
+</LinearLayout>

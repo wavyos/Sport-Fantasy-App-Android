@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.T_MatchupFragment">
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:background="#F6EBEB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:id="@+id/iv_team1"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_tshirt"/>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:id="@+id/tv_team_name_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textSize="16sp"
+                        android:text="@string/team_name"/>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:id="@+id/tv_score_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/roboto_bold"
+                        android:textSize="23sp"
+                        android:text="@string/_0"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:id="@+id/iv_team2"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_tshirt"/>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:id="@+id/tv_team_name2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textSize="16sp"
+                        android:text="@string/team_name"/>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:id="@+id/tv_score_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/roboto_bold"
+                        android:textSize="23sp"
+                        android:text="@string/_0"/>
+
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:backgroundTint="#AEB8FF"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/line_border"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/img_date_left"
+                    android:src="@drawable/ic_baseline_chevron_left_24"
+                    app:tint="@color/bg" />
+
+                <TextView
+                    android:id="@+id/tv_select_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto_regular"
+                    android:padding="10dp"
+                    android:textColor="@color/bg"
+                    android:text=""
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/img_date_right"
+                    android:src="@drawable/ic_baseline_chevron_right_24"
+                    app:tint="@color/bg" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_matchup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <me.relex.circleindicator.CircleIndicator2
+        android:id="@+id/worm_dots_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        app:ci_drawable="@drawable/selected_row"
+        app:ci_drawable_unselected="@drawable/selected_row_disable"
+        app:ci_height="8sp"
+        app:ci_width="8sp" />
+
+<!--    <com.example.sportsfantasy.Utils.WormDotsIndicator
+        android:id="@+id/worm_dots_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        app:dotsColor="@color/bg"
+        app:dotsStrokeColor="@color/stroke_color"
+        app:dotsCornerRadius="8dp"
+        app:dotsSize="10dp"
+        app:dotsSpacing="4dp"
+        app:dotsStrokeWidth="5dp"
+        />-->
+
+</RelativeLayout>

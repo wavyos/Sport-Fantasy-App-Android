@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Fragment.NewsFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/sports_fantasy_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_baseline_arrow_back_24"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_name_app"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="70dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/news"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:text="每周预测：红榜和黑榜，谁是黑马？"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/article"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:text="在范特西篮球中，有效利用豁免线是取得成功的关键。由于比赛众多、伤病不断，以及在漫长的赛季中轮换不断变化，我们需要从自由市场中获取数据，以最大化虚构阵容。对于在你的幻想篮球阵容中争夺最后几个名额的竞争保持开放态度可能会带来回报。在策划这个不断变化的统计贡献者团队时，考虑将你的板凳球员视为直接与自由市场上浮现的才华竞争的有助于。"
+                android:fontFamily="@font/roboto_light"
+                android:textColor="@color/stroke_color"
+                android:textSize="14sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:alpha="0.4"
+                android:layout_marginVertical="5dp"
+                android:background="@color/stroke_color"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:text="控球后卫"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:id="@+id/ll_news"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginVertical="10dp"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_articals"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/row_artical_item_layout" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:text="特殊球队规则"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:text="@string/str_artical_down_desc"
+                android:fontFamily="@font/roboto_light"
+                android:textColor="@color/stroke_color"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>

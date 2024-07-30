@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/rrMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="15dp"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/cv_users"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:src="@mipmap/ic_launcher_app_main_round"
+            app:civ_border_color="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_team_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@+id/cv_users"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="#344356"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_toLeftOf="@+id/tv_time"
+            android:id="@+id/txtMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_team_name"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/cv_users"
+            android:alpha="0.6"
+            android:maxLines="1"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/hatton_let_s_play_game"
+            android:textColor="#344356"
+            android:textSize="14sp" />
+
+        <TextView
+            android:gravity="end"
+            android:id="@+id/tv_time"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:alpha="0.6"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/_10_15pm"
+            android:textColor="#344356"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+</layout>

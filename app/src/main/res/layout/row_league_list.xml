@@ -1,0 +1,976 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <com.google.android.material.card.MaterialCardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="13dp"
+        app:cardElevation="2dp"
+        app:strokeWidth="0.5dp"
+        app:strokeColor="@color/stroke_color"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/cvUpComingLeauge"
+            android:visibility="gone"
+            android:background="@color/white"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/league_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:gravity="center_vertical"
+                    android:text="League Name"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="end"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="center_vertical"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="15dp"
+                            android:text="@string/week"
+                            android:textColor="@color/stroke_color"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/current_weeek"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="-10dp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="center_vertical"
+                            android:paddingEnd="10dp"
+                            android:text="1"
+                            android:textColor="@color/white"
+                            android:textSize="16dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:src="@drawable/league_joined" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:orientation="vertical"
+
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_ft_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="Team 7"
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/tc_ft_score"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-10dp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="end"
+                            android:paddingEnd="10dp"
+                            android:text="0-0-0"
+                            android:textColor="@color/black"
+                            android:textSize="12dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_ft_player_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-5dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="Billie Bucher"
+                                android:textColor="#A3000000"
+                                android:textSize="12sp" />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:src="@drawable/league_joined" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:orientation="vertical"
+
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_st_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="Team 7"
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/tv_st_score"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-9dp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="end"
+                            android:paddingEnd="10dp"
+                            android:text="0-0-0"
+                            android:textColor="@color/black"
+                            android:textSize="12dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_st_player_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-5dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="Billie Bucher"
+                                android:textColor="#A3000000"
+                                android:textSize="12sp" />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="15dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/btn_myteam"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            app:cardBackgroundColor="@color/bg"
+                            app:cardCornerRadius="13dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:paddingHorizontal="35dp"
+                                android:text="@string/my_team"
+
+                                android:textColor="@color/white"
+                                android:textSize="16dp" />
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/btn_matchup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            app:cardBackgroundColor="@color/bg"
+                            app:cardCornerRadius="13dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:paddingHorizontal="35dp"
+                                android:text="@string/matchup"
+                                android:textColor="@color/white"
+                                android:textSize="16dp" />
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/cvDrComingLeauge"
+            android:background="@color/white"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/league_drname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:gravity="center_vertical"
+                    android:text="League Name"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="end"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:paddingHorizontal="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/current_drweeek"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="center_vertical"
+                            android:text="Week 1"
+                            android:textColor="@color/stroke_color"
+                            android:textSize="13dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:id="@+id/cvDailyDraftPost"
+                android:elevation="0dp"
+                android:visibility="visible"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:src="@drawable/league_joined" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_drft_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="Team 7"
+                            android:textColor="@color/black"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/tc_drft_score"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-10dp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="end"
+                            android:paddingEnd="10dp"
+                            android:text="0-0-0"
+                            android:textColor="@color/black"
+                            android:textSize="12dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_drft_player_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-3dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="Billie Bucher"
+                                android:textColor="#A3000000"
+                                android:textSize="10sp" />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:src="@drawable/league_joined" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_drst_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="Team 7"
+                            android:textColor="@color/black"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/tv_drst_score"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-10dp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="end"
+                            android:paddingEnd="10dp"
+                            android:text="0-0-0"
+                            android:textColor="@color/black"
+                            android:textSize="12dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_drst_player_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-3dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="Billie Bucher"
+                                android:textColor="#A3000000"
+                                android:textSize="10sp" />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="45dp"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/stroke_color"/>
+
+                    <View
+                        android:layout_width="0.7dp"
+                        android:layout_gravity="center"
+                        android:layout_height="50dp"
+                        android:background="@color/stroke_color"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:paddingHorizontal="15dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            >
+
+                            <TextView
+                                android:id="@+id/btn_drmatchup"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="@string/my_team"
+                                android:textColor="@color/bg"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:id="@+id/btn_drdraft"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="@string/draft"
+                                android:textColor="@color/bg"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/cvDailyDraftLeave"
+                android:background="@color/white"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:id="@+id/llFirstPosition"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/iv_imgFirst"
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/league_joined" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:paddingStart="10dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/tv_player_name_First"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="start"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:hint="@string/player_name"
+                                        android:textColor="@color/black"
+                                        android:textColorHint="@color/black"
+                                        android:textSize="15sp" />
+                                    <TextView
+                                        android:id="@+id/tv_team_nameFirst"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="start"
+                                        android:fontFamily="@font/roboto_regular"
+                                        android:hint="@string/team_name"
+                                        android:maxLines="1"
+                                        android:ellipsize="end"
+                                        android:textColor="#817A7A"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:paddingHorizontal="10dp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+                                    <TextView
+                                        android:id="@+id/tv_win"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="start"
+                                        android:fontFamily="@font/roboto_bold"
+                                        android:hint="3"
+                                        android:textColor="@color/black"
+                                        android:textColorHint="@color/black"
+                                        android:textSize="18sp" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="start"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:hint="@string/str_wins"
+                                        android:textSize="15sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+                                    <TextView
+                                        android:id="@+id/tv_lose"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_bold"
+                                        android:hint="5"
+                                        android:textColor="@color/black"
+                                        android:textColorHint="@color/black"
+                                        android:textSize="18sp" />
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:hint="@string/str_losses"
+                                        android:textSize="15sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/img_win_loss"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="2.5"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_trophy" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#918F8F"/>
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_gravity="center"
+                        android:layout_height="50dp"
+                        android:background="#918F8F"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:weightSum="2"
+                        android:paddingHorizontal="15dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.8"
+                            >
+
+
+                            <TextView
+                                android:id="@+id/btn_first_myTeam"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="@string/my_team"
+                                android:textColor="@color/bg"
+                                android:textSize="15sp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.2"
+                            android:gravity="center">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:id="@+id/btn_rank"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="@string/str_rank"
+                                android:textColor="@color/bg"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </FrameLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:background="@color/white"
+            android:id="@+id/cvDraftLeauge"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_league_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:fontFamily="@font/roboto_bold"
+                    android:gravity="start"
+                    android:padding="10dp"
+                    android:text="@string/dallas_pro_h2h_point_league"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:background="#C76135"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/week_1"
+                    android:textColor="@color/stroke_color"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/all"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_img"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/league_joined" />
+
+                    <TextView
+                        android:id="@+id/tv_team_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:hint="@string/team_name"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="18sp" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:alpha="0.5"
+                    android:layout_marginHorizontal="50dp"
+                    android:background="@color/bg" />
+
+                <TextView
+                    android:id="@+id/tv_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/roboto_light"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:orientation="horizontal">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_weight="1"
+                    android:outlineSpotShadowColor="@color/black"
+                    app:cardBackgroundColor="@color/bg"
+                    app:cardCornerRadius="13dp"
+                    app:cardPreventCornerOverlap="true">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/invite_your_friends"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_weight="1"
+                    android:outlineSpotShadowColor="@color/black"
+                    app:cardBackgroundColor="@color/bg"
+                    app:cardCornerRadius="13dp"
+                    app:cardPreventCornerOverlap="true">
+
+                    <TextView
+                        android:id="@+id/invite_member"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/invite_member"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:layout_marginTop="10dp"
+                android:alpha="0.5"
+                android:background="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_team"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="@string/my_team"
+                    android:textColor="@color/bg"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:alpha="0.5"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_draft"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="@string/invite_member"
+                    android:textColor="@color/bg"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</layout>
+

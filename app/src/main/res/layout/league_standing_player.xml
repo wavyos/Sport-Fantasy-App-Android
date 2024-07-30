@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns="http://www.w3.org/"
+    >
+    <HorizontalScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/scroll"
+        android:scrollbars="none"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_toEndOf="@id/ll">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/records"
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text=""
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/win"
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/roboto_regular"
+                    android:gravity="center"
+                    android:text=""
+                    android:textSize="12sp" />
+
+               <!-- <TextView
+                    android:id="@+id/gb"
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:textSize="12sp" />-->
+
+                <TextView
+                    android:id="@+id/pf"
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text=""
+                    android:textSize="12sp" />
+               <!-- <TextView
+                    android:id="@+id/pa"
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:textSize="12sp" />-->
+                <TextView
+                    android:id="@+id/playoff"
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text=""
+                    android:textSize="12sp" />
+                <TextView
+                    android:id="@+id/strk"
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text=""
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+            <View
+                android:id="@+id/view_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:alpha="0.4"
+                android:layout_marginTop="-12dp"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/line_dash" />
+        </LinearLayout>
+    </HorizontalScrollView>
+</layout>

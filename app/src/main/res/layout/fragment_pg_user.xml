@@ -1,0 +1,2123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.newFlow.PgUserFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/main_activity_bg"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--    11 screen-->
+        <include layout="@layout/custom_app_bar"/>
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <HorizontalScrollView
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"/>
+
+                </HorizontalScrollView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/iv_user2"
+                        android:src="@drawable/logo"
+                        app:civ_border_width="2dp"
+                        android:layout_marginTop="27dp"
+                        android:layout_marginStart="20dp"
+                        app:civ_border_color="@android:color/transparent"
+                        android:layout_width="86dp"
+                        android:layout_height="86dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_player_name2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/stephen_curry"
+                        android:layout_marginTop="22sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/bg"
+                        android:textSize="25sp"
+                        android:layout_marginStart="11dp"
+                        android:layout_toEndOf="@+id/iv_user2"/>
+
+                    <TextView
+                        android:id="@+id/tv_hash_rank2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="11dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="22sp"
+                        android:layout_marginEnd="18sp"
+                        android:text="@string/_30"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/tv_status2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/iv_user2"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginStart="13dp"
+                        android:textSize="14sp"
+                        android:text="@string/golden_state_warrior"
+                        android:layout_below="@+id/tv_player_name2" />
+
+                    <TextView
+                        android:id="@+id/tv_position2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/iv_user2"
+                        android:layout_marginStart="13dp"
+                        android:textSize="14sp"
+                        android:text="@string/position_pg"
+                        android:layout_below="@+id/tv_status2" />
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/line_border"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textSize="14sp"
+                            android:text="@string/pos_rank" />
+
+                        <TextView
+                            android:id="@+id/tv_pos_rank2"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_bold"
+                            android:textSize="14sp"
+                            android:textColor="@color/bg"
+                            android:text="7" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_marginTop="-6dp"
+                        android:layout_marginBottom="-6dp"
+                        android:layout_height="match_parent"
+                        android:background="@mipmap/horizontal_line"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textSize="14sp"
+                            android:text="@string/avg_point" />
+
+                        <TextView
+                            android:id="@+id/tv_avg_point2"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_bold"
+                            android:textSize="14sp"
+                            android:textColor="@color/bg"
+                            android:text="@string/dase" />
+
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_marginTop="-6dp"
+                        android:layout_marginBottom="-6dp"
+                        android:layout_height="match_parent"
+                        android:background="@mipmap/horizontal_line"/>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textSize="14sp"
+                            android:text="@string/min" />
+
+                        <TextView
+                            android:id="@+id/tv_min2"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_bold"
+                            android:textSize="14sp"
+                            android:textColor="@color/bg"
+                            android:text="@string/dase" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_marginTop="-6dp"
+                        android:layout_marginBottom="-6dp"
+                        android:layout_height="match_parent"
+                        android:background="@mipmap/horizontal_line"/>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textSize="14sp"
+                            android:text="@string/rostered" />
+
+                        <TextView
+                            android:id="@+id/tv_rostered2"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_bold"
+                            android:textSize="14sp"
+                            android:textColor="@color/bg"
+                            android:text="99.8" />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/line_border"/>
+
+
+                <androidx.cardview.widget.CardView
+                    app:cardBackgroundColor="#F8FAFC"
+                    android:layout_margin="20dp"
+                    app:cardCornerRadius="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <androidx.cardview.widget.CardView
+                            app:cardBackgroundColor="#AEB8FF"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="15dp">
+
+                            <TextView
+                                android:layout_gravity="center"
+                                android:layout_margin="5dp"
+                                android:padding="5dp"
+                                android:fontFamily="@font/roboto_bold"
+                                android:textSize="16sp"
+                                android:textColor="@color/black"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/season_stats"/>
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_regular"
+                                        android:textSize="12sp"
+                                        android:text="@string/date" />
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:textSize="12sp"
+                                        android:text="Proj 2023" />
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_width="55dp"
+                                        android:layout_gravity="center"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_bold"
+                                        android:textColor="@color/black"
+                                        android:textSize="12sp"
+                                        android:text="@string/points" />
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:textSize="12sp"
+                                        android:text="@string/doubledas" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_width="55dp"
+                                        android:layout_gravity="center"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_bold"
+                                        android:textColor="@color/black"
+                                        android:textSize="12sp"
+                                        android:text="@string/salary" />
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:textSize="12sp"
+                                        android:text="@string/doubledas" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_bold"
+                                        android:textColor="@color/black"
+                                        android:textSize="12sp"
+                                        android:text="@string/fgm" />
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:textSize="12sp"
+                                        android:text="@string/doubledas" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_bold"
+                                        android:textColor="@color/black"
+                                        android:textSize="12sp"
+                                        android:text="3PT" />
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:textSize="12sp"
+                                        android:text="@string/doubledas" />
+
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_bold"
+                                        android:textColor="@color/black"
+                                        android:textSize="12sp"
+                                        android:text="@string/reb" />
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:textSize="12sp"
+                                        android:text="@string/doubledas" />
+
+
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_bold"
+                                        android:textColor="@color/black"
+                                        android:textSize="12sp"
+                                        android:text="@string/ft" />
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:textSize="12sp"
+                                        android:text="@string/doubledas" />
+
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_bold"
+                                        android:textColor="@color/black"
+                                        android:textSize="12sp"
+                                        android:text="@string/blk" />
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:textSize="12sp"
+                                        android:text="@string/doubledas" />
+
+
+
+                                </LinearLayout>
+
+
+
+
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@drawable/line_border"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:textSize="12sp"
+                                        android:text="2022" />
+
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="45dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:textSize="12sp"
+                                        android:gravity="center_horizontal"
+                                        android:text="$10000" />
+
+                                    <TextView
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:textSize="12sp"
+                                        android:drawableStart="@drawable/ic_up_small"
+                                        android:text="13%" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:textSize="12sp"
+                                        android:text="4.5" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:textSize="12sp"
+                                        android:text="6.5" />
+
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:textSize="12sp"
+                                        android:text="2" />
+
+
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:textSize="12sp"
+                                        android:text="3" />
+
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:textSize="12sp"
+                                        android:text="7" />
+
+
+
+                                </LinearLayout>
+
+
+
+
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    app:cardBackgroundColor="#F8FAFC"
+                    android:layout_margin="20dp"
+                    app:cardCornerRadius="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <androidx.cardview.widget.CardView
+                            app:cardBackgroundColor="#AEB8FF"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="15dp">
+
+                            <TextView
+                                android:layout_gravity="center"
+                                android:layout_margin="5dp"
+                                android:padding="5dp"
+                                android:fontFamily="@font/roboto_bold"
+                                android:textSize="16sp"
+                                android:textColor="@color/black"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/game_log"/>
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_bold"
+                                        android:textSize="12sp"
+                                        android:textColor="@color/black"
+                                        android:text="@string/date" />
+
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_width="55dp"
+                                        android:layout_gravity="center"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_bold"
+                                        android:textColor="@color/black"
+                                        android:textSize="12sp"
+                                        android:text="@string/points" />
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:textSize="12sp"
+                                        android:text="@string/doubledas" />
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_width="55dp"
+                                        android:layout_gravity="center"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_bold"
+                                        android:textColor="@color/black"
+                                        android:textSize="12sp"
+                                        android:text="@string/salary" />
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:textSize="12sp"
+                                        android:text="@string/doubledas" />
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_bold"
+                                        android:textColor="@color/black"
+                                        android:textSize="12sp"
+                                        android:text="@string/fgm" />
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:textSize="12sp"
+                                        android:text="@string/doubledas" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_bold"
+                                        android:textColor="@color/black"
+                                        android:textSize="12sp"
+                                        android:text="3PT" />
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:textSize="12sp"
+                                        android:text="@string/doubledas" />
+
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_bold"
+                                        android:textColor="@color/black"
+                                        android:textSize="12sp"
+                                        android:text="@string/reb" />
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:textSize="12sp"
+                                        android:text="@string/doubledas" />
+
+
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_bold"
+                                        android:textColor="@color/black"
+                                        android:textSize="12sp"
+                                        android:text="@string/ft" />
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:textSize="12sp"
+                                        android:text="@string/doubledas" />
+
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_bold"
+                                        android:textColor="@color/black"
+                                        android:textSize="12sp"
+                                        android:text="@string/blk" />
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:textSize="12sp"
+                                        android:text="@string/doubledas" />
+
+
+
+                                </LinearLayout>
+
+
+
+
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:visibility="gone"
+                            android:background="@drawable/line_border"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:textSize="12sp"
+                                        android:text="4/11" />
+
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="45dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:textSize="12sp"
+                                        android:gravity="center_horizontal"
+                                        android:text="$10000" />
+
+                                    <TextView
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:textSize="12sp"
+                                        android:drawableStart="@drawable/ic_up_small"
+                                        android:text="13%" />
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:textSize="12sp"
+                                        android:text="4.5" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:textSize="12sp"
+                                        android:text="6.5" />
+
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:textSize="12sp"
+                                        android:text="2" />
+
+
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:textSize="12sp"
+                                        android:text="3" />
+
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:textSize="12sp"
+                                        android:text="7" />
+
+
+
+                                </LinearLayout>
+
+
+
+
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@drawable/line_border"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:textSize="12sp"
+                                        android:text="4/10" />
+
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="45dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:textSize="12sp"
+                                        android:text="$9500" />
+
+                                    <TextView
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:textSize="12sp"
+                                        android:drawableStart="@drawable/ic_up_small"
+                                        android:text="11%" />
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:textSize="12sp"
+                                        android:text="4.5" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:textSize="12sp"
+                                        android:text="6.5" />
+
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:textSize="12sp"
+                                        android:text="2" />
+
+
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:textSize="12sp"
+                                        android:text="3" />
+
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:textSize="12sp"
+                                        android:text="7" />
+
+
+
+                                </LinearLayout>
+
+
+
+
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_player_profile"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="-20dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/blue_profile_cut">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/iv_user"
+                            android:src="@drawable/logo"
+                            app:civ_border_width="2dp"
+                            android:layout_marginTop="50dp"
+                            app:civ_circle_background_color="@color/white"
+                            android:layout_marginStart="20dp"
+                            app:civ_border_color="@color/white"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_player_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="22sp"
+                            android:layout_marginTop="80dp"
+                            android:layout_marginStart="11dp"
+                            android:layout_toEndOf="@+id/iv_user"/>
+
+                        <!--            <TextView-->
+                        <!--                android:id="@+id/tv_hash_rank"-->
+                        <!--                android:layout_width="wrap_content"-->
+                        <!--                android:layout_height="wrap_content"-->
+                        <!--                android:layout_marginStart="11dp"-->
+                        <!--                android:layout_alignParentEnd="true"-->
+                        <!--                android:layout_marginTop="22sp"-->
+                        <!--                android:layout_marginEnd="18sp"-->
+                        <!--                android:text="@string/_30"-->
+                        <!--                -->
+                        <!--                android:textSize="24sp"-->
+                        <!--                android:textStyle="bold" />-->
+
+
+                        <!--            <TextView-->
+                        <!--                android:id="@+id/tv_status"-->
+                        <!--                android:layout_width="match_parent"-->
+                        <!--                android:layout_height="wrap_content"-->
+                        <!--                android:layout_toEndOf="@+id/iv_user"-->
+                        <!--                android:layout_marginTop="7dp"-->
+                        <!--                android:layout_marginStart="13dp"-->
+                        <!--                android:textSize="14sp"-->
+                        <!--                android:text="@string/golden_state_warrior"-->
+                        <!--                android:layout_below="@+id/tv_player_name" />-->
+
+                        <!--<TextView
+                            android:id="@+id/tv_position"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@+id/iv_user"
+                            android:layout_marginStart="13dp"
+                            android:textSize="14sp"
+                            android:text="@string/position_pg"
+                            android:layout_below="@+id/tv_status" />-->
+
+                        <!--            <TextView-->
+                        <!--                android:id="@+id/tv_played_team_name"-->
+                        <!--                android:layout_width="match_parent"-->
+                        <!--                android:layout_height="wrap_content"-->
+                        <!--                android:layout_toEndOf="@+id/iv_user"-->
+                        <!--                android:layout_marginStart="13dp"-->
+                        <!--                android:textSize="14sp"-->
+                        <!--                android:text="@string/team_name_team_name"-->
+                        <!--                android:layout_below="@+id/tv_status" />-->
+
+                    </RelativeLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="15dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textSize="14sp"
+                        android:text="@string/team_name" />
+
+                    <TextView
+                        android:id="@+id/tv_played_team_name"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:text="99.8" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textSize="14sp"
+                        android:text="@string/position_pg" />
+
+                    <TextView
+                        android:id="@+id/tv_position"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:text="@string/position_pg" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textSize="14sp"
+                        android:text="@string/avg_point" />
+
+                    <TextView
+                        android:id="@+id/tv_avg_point"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:text="@string/dase" />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textSize="14sp"
+                        android:text="@string/pos_rank" />
+
+                    <TextView
+                        android:id="@+id/tv_pos_rank"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:text="7" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.card.MaterialCardView
+                        app:cardBackgroundColor="@color/white"
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="15dp"
+                        app:strokeWidth="1dp"
+                        app:strokeColor="@color/stroke_color"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <androidx.cardview.widget.CardView
+                                app:cardBackgroundColor="@color/white"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:cardCornerRadius="0dp">
+
+                                <TextView
+                                    android:gravity="start"
+                                    android:layout_margin="5dp"
+                                    android:padding="5dp"
+                                    android:fontFamily="@font/roboto_bold"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/season_stats"/>
+
+
+                            </androidx.cardview.widget.CardView>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:alpha="0.5"
+                                android:background="@color/stroke_color"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <HorizontalScrollView
+                                    android:scrollbars="none"
+                                    android:id="@+id/hv_scroll_header"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="-5dp"
+                                        android:background="@color/white"
+                                        android:orientation="vertical">
+
+                                        <LinearLayout
+                                            android:focusableInTouchMode="false"
+                                            android:clickable="false"
+                                            android:touchscreenBlocksFocus="false"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal"
+                                            android:paddingTop="10dp"
+                                            android:paddingBottom="10dp"
+                                            android:visibility="visible">
+
+                                            <LinearLayout
+                                                android:layout_width="70dp"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="vertical">
+
+                                                <TextView
+                                                    android:gravity="center"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:fontFamily="@font/roboto_bold"
+                                                    android:textSize="12sp"
+                                                    android:textColor="@color/stroke_color"
+                                                    android:text="@string/str_year" />
+
+
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:layout_marginStart="5dp"
+                                                android:layout_width="70dp"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="vertical">
+
+                                                <TextView
+                                                    android:gravity="center"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_height="wrap_content"
+                                                    android:fontFamily="@font/roboto_bold"
+                                                    android:textColor="@color/stroke_color"
+                                                    android:textSize="12sp"
+                                                    android:text="@string/points" />
+
+
+
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:layout_width="70dp"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="vertical">
+
+                                                <TextView
+                                                    android:gravity="center"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_height="wrap_content"
+                                                    android:fontFamily="@font/roboto_bold"
+                                                    android:textColor="@color/stroke_color"
+                                                    android:textSize="12sp"
+                                                    android:text="@string/salary" />
+
+
+
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:layout_width="70dp"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="vertical">
+
+                                                <TextView
+                                                    android:gravity="center"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:fontFamily="@font/roboto_bold"
+                                                    android:textColor="@color/stroke_color"
+                                                    android:textSize="12sp"
+                                                    android:text="@string/fgm" />
+
+
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:layout_width="70dp"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="vertical">
+
+                                                <TextView
+                                                    android:gravity="center"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:fontFamily="@font/roboto_bold"
+                                                    android:textColor="@color/stroke_color"
+                                                    android:textSize="12sp"
+                                                    android:text="@string/_3pts" />
+
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:layout_width="70dp"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="vertical">
+
+                                                <TextView
+                                                    android:gravity="center"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:fontFamily="@font/roboto_bold"
+                                                    android:textColor="@color/stroke_color"
+                                                    android:textSize="12sp"
+                                                    android:text="@string/reb" />
+
+
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:layout_width="70dp"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="vertical">
+
+                                                <TextView
+                                                    android:gravity="center"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:fontFamily="@font/roboto_bold"
+                                                    android:textColor="@color/stroke_color"
+                                                    android:textSize="12sp"
+                                                    android:text="@string/ft" />
+
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:layout_width="70dp"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="vertical">
+
+                                                <TextView
+                                                    android:gravity="center"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:fontFamily="@font/roboto_bold"
+                                                    android:textColor="@color/stroke_color"
+                                                    android:textSize="12sp"
+                                                    android:text="@string/blk" />
+
+
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:layout_width="70dp"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="vertical">
+
+                                                <TextView
+                                                    android:gravity="center"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:fontFamily="@font/roboto_bold"
+                                                    android:textColor="@color/stroke_color"
+                                                    android:textSize="12sp"
+                                                    android:text="@string/stl" />
+
+
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:layout_width="70dp"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="vertical">
+
+                                                <TextView
+                                                    android:gravity="center"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:fontFamily="@font/roboto_bold"
+                                                    android:textColor="@color/stroke_color"
+                                                    android:textSize="12sp"
+                                                    android:text="@string/tov" />
+
+
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+
+                                        <View
+                                            android:layout_width="match_parent"
+                                            android:layout_height="1dp"
+                                            android:alpha="0.5"
+                                            android:background="@color/stroke_color"/>
+
+                                        <androidx.recyclerview.widget.RecyclerView
+                                            android:id="@+id/rv_season_stat"
+                                            android:visibility="visible"
+                                            app:fastScrollEnabled="false"
+                                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            tools:itemCount="5"
+                                            tools:listitem="@layout/row_player_pg" />
+
+                                    </LinearLayout>
+                                </HorizontalScrollView>
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        app:cardBackgroundColor="@color/white"
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="15dp"
+                        app:strokeWidth="1dp"
+                        app:strokeColor="@color/stroke_color"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <androidx.cardview.widget.CardView
+                                app:cardBackgroundColor="@color/white"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:cardElevation="0dp"
+                                app:cardCornerRadius="0dp">
+
+                                <TextView
+                                    android:gravity="start"
+                                    android:layout_margin="5dp"
+                                    android:padding="5dp"
+                                    android:fontFamily="@font/roboto_bold"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/game_log"/>
+
+
+                            </androidx.cardview.widget.CardView>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:alpha="0.5"
+                                android:background="@color/stroke_color"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <HorizontalScrollView
+                                    android:scrollbars="none"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="-5dp"
+                                        android:orientation="vertical">
+
+                                        <LinearLayout
+                                            android:focusableInTouchMode="false"
+                                            android:clickable="false"
+                                            android:touchscreenBlocksFocus="false"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal"
+                                            android:paddingTop="10dp"
+                                            android:paddingBottom="10dp"
+                                            android:visibility="visible">
+
+                                            <LinearLayout
+                                                android:layout_width="70dp"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="vertical">
+
+                                                <TextView
+                                                    android:gravity="center"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:fontFamily="@font/roboto_bold"
+                                                    android:textSize="12sp"
+                                                    android:textColor="@color/stroke_color"
+                                                    android:text="@string/date" />
+
+
+
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_marginStart="5dp"
+                                                android:layout_width="70dp"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="vertical">
+
+                                                <TextView
+                                                    android:gravity="center"
+                                                    android:layout_width="55dp"
+                                                    android:layout_gravity="center"
+                                                    android:layout_height="wrap_content"
+                                                    android:fontFamily="@font/roboto_bold"
+                                                    android:textColor="@color/stroke_color"
+                                                    android:textSize="12sp"
+                                                    android:text="@string/points" />
+
+
+
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="70dp"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="vertical">
+
+                                                <TextView
+                                                    android:gravity="center"
+                                                    android:layout_width="55dp"
+                                                    android:layout_gravity="center"
+                                                    android:layout_height="wrap_content"
+                                                    android:fontFamily="@font/roboto_bold"
+                                                    android:textColor="@color/stroke_color"
+                                                    android:textSize="12sp"
+                                                    android:text="@string/salary" />
+
+
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="70dp"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="vertical">
+                                                <TextView
+                                                    android:gravity="center"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:fontFamily="@font/roboto_bold"
+                                                    android:textColor="@color/stroke_color"
+                                                    android:textSize="12sp"
+                                                    android:text="@string/fgm" />
+
+
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="70dp"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="vertical">
+
+                                                <TextView
+                                                    android:gravity="center"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:fontFamily="@font/roboto_bold"
+                                                    android:textColor="@color/stroke_color"
+                                                    android:textSize="12sp"
+                                                    android:text="@string/_3pts" />
+
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="70dp"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="vertical">
+
+                                                <TextView
+                                                    android:gravity="center"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:fontFamily="@font/roboto_bold"
+                                                    android:textColor="@color/stroke_color"
+                                                    android:textSize="12sp"
+                                                    android:text="@string/reb" />
+
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:layout_width="70dp"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="vertical">
+
+                                                <TextView
+                                                    android:gravity="center"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:fontFamily="@font/roboto_bold"
+                                                    android:textColor="@color/stroke_color"
+                                                    android:textSize="12sp"
+                                                    android:text="@string/ft" />
+
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:layout_width="70dp"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="vertical">
+                                                <TextView
+                                                    android:gravity="center"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:fontFamily="@font/roboto_bold"
+                                                    android:textColor="@color/stroke_color"
+                                                    android:textSize="12sp"
+                                                    android:text="@string/blk" />
+
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="70dp"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="vertical">
+
+                                                <TextView
+                                                    android:gravity="center"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:fontFamily="@font/roboto_bold"
+                                                    android:textColor="@color/stroke_color"
+                                                    android:textSize="12sp"
+                                                    android:text="@string/stl" />
+
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="70dp"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="vertical">
+
+                                                <TextView
+                                                    android:gravity="center"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:fontFamily="@font/roboto_bold"
+                                                    android:textColor="@color/stroke_color"
+                                                    android:textSize="12sp"
+                                                    android:text="@string/tov" />
+
+
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+
+                                        <View
+                                            android:layout_width="match_parent"
+                                            android:layout_height="1dp"
+                                            android:alpha="0.5"
+                                            android:background="@color/stroke_color"/>
+                                        <androidx.recyclerview.widget.RecyclerView
+                                            android:id="@+id/rv_game_log"
+                                            android:visibility="visible"
+                                            app:fastScrollEnabled="false"
+                                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            tools:itemCount="5"
+                                            tools:listitem="@layout/row_player_pg" />
+
+                                    </LinearLayout>
+                                </HorizontalScrollView>
+
+
+
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_progress"
+        android:visibility="gone"
+        android:repeatCount="infinite"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        app:civ_border_width="1dp"
+        android:src="@mipmap/ic_launcher_app_main_round"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

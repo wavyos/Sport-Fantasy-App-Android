@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "800306054060",
+    "project_id": "sports-fantasy-4aa73",
+    "storage_bucket": "sports-fantasy-4aa73.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800306054060:android:dcfb90f396e03143f6b009",
+        "android_client_info": {
+          "package_name": "com.example.sportsfantasy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "800306054060-p0bfdr3o192616022m9v694jfn1f7auh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sportsfantasy",
+            "certificate_hash": "79cb341bcffac72b9d3be624cd1176ce25b30371"
+          }
+        },
+        {
+          "client_id": "800306054060-uqthldt2um3jl1v1n1tjft74nsr0nevq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0AMOt6pH1dnUDMHCKb0WDzHIEEHRY4z4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "800306054060-uqthldt2um3jl1v1n1tjft74nsr0nevq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

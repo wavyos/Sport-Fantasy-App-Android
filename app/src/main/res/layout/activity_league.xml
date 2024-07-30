@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Activities.LeagueActivity">
+
+    <include layout="@layout/custom_app_bar" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_league_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="24sp"
+                    android:paddingHorizontal="20dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:text="@string/league_name"/>
+
+                <RelativeLayout
+                    android:layout_below="@+id/tv_league_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:gravity="start"
+                        android:id="@+id/tv_start_time"
+                        android:layout_centerVertical="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/roboto_bold"
+                        />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/tv_count_time"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/roboto_bold"
+                        android:layout_alignParentRight="true"
+                        android:text="@string/_12_34_43"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_position_salary"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="$"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textSize="28sp"
+                    android:textColor="#171531"
+                    android:alpha="0.8"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:text="@string/_12"
+                    android:layout_gravity="center"
+                    android:textSize="28sp"
+                    android:drawablePadding="10dp"
+                    android:layout_marginStart="70dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textColor="#171531"
+                    android:alpha="0.7"
+                    android:layout_height="wrap_content"
+                    app:drawableStartCompat="@drawable/ic_up" />
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:visibility="gone"
+                android:layout_marginEnd="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:text="@string/auto_draft"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content"/>
+
+                <com.github.angads25.toggle.widget.LabeledSwitch
+                    android:id="@+id/swt_autoDraft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="14sp"
+                    app:on="false"
+                    app:textOn="@string/on"
+                    app:textOff="@string/off"
+                    app:colorOn="#D1D1D1"
+                    app:colorBorder="#D1D1D1"/>
+
+                <TextView
+                    android:layout_weight="0.4"
+                    android:layout_width="0dp"
+                    android:text="@string/_12_"
+                    android:visibility="invisible"
+                    android:textSize="28sp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_weight="0.9"
+                    android:layout_width="0dp"
+                    android:text="@string/import_"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_weight="0.9"
+                    android:layout_width="0dp"
+                    android:text="@string/line_up"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="0dp"
+                android:layout_marginTop="10dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardUseCompatPadding="true"
+                app:cardPreventCornerOverlap="true">
+
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:id="@+id/shimmer"
+                    android:layout_width="wrap_content"
+                    android:paddingHorizontal="6dp"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <include layout="@layout/row_position_list_new"/>
+                        <include layout="@layout/row_position_list_new"/>
+                        <include layout="@layout/row_position_list_new"/>
+                        <include layout="@layout/row_position_list_new"/>
+                        <include layout="@layout/row_position_list_new"/>
+
+
+                    </LinearLayout>
+                </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_position_list"
+                    android:visibility="gone"
+                    android:paddingHorizontal="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:clickable="true"
+                android:elevation="10dp"
+                android:focusable="true"
+                android:id="@+id/btn_submit_roster"
+                android:outlineSpotShadowColor="@color/black"
+                app:cardBackgroundColor="@color/bg"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp"
+                app:cardMaxElevation="10dp"
+                app:cardPreventCornerOverlap="true"
+                tools:targetApi="p">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="@string/str_submit_roster"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+</layout>

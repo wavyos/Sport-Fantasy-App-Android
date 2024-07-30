@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:paddingTop="10dp"
+                android:gravity="center"
+                android:id="@+id/llDate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_keyboard_arrow_down"/>
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:id="@+id/tv_select_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textSize="12sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+<!--            old 3-4 option design-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_league_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/league_name"
+                    android:textColor="@color/bg"
+                    android:textSize="24dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:alpha="0.5"
+                    android:layout_marginHorizontal="16dp"
+                    android:background="@drawable/line_dash" />
+
+                <TextView
+                    android:id="@+id/tv_score_board"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:padding="10dp"
+                    android:text="@string/scoreboard"
+                    android:textColor="@color/text_color_pg"
+                    android:textSize="16sp"
+                    app:drawableEndCompat="@drawable/ic_baseline_chevron_right_24" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:alpha="0.5"
+                    android:layout_marginHorizontal="16dp"
+                    android:background="@drawable/line_dash" />
+
+                <TextView
+                    android:id="@+id/tv_standing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:padding="10dp"
+                    android:text="@string/standing"
+                    android:textColor="@color/text_color_pg"
+                    android:textSize="16sp"
+                    app:drawableEndCompat="@drawable/ic_baseline_chevron_right_24" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:alpha="0.5"
+                    android:layout_marginHorizontal="16dp"
+                    android:background="@drawable/line_dash" />
+
+                <TextView
+                    android:id="@+id/tv_message_board"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:padding="10dp"
+                    android:text="@string/message_board"
+                    android:textColor="@color/text_color_pg"
+                    android:textSize="16sp"
+                    app:drawableEndCompat="@drawable/ic_baseline_chevron_right_24" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:alpha="0.5"
+                    android:layout_marginHorizontal="16dp"
+                    android:background="@drawable/line_dash" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tv_leage_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:padding="10dp"
+                    android:text="@string/league_info"
+                    android:textColor="@color/text_color_pg"
+                    android:textSize="18sp"
+                    app:drawableEndCompat="@drawable/ic_baseline_chevron_right_24" />
+
+                <View
+                    android:visibility="gone"
+                    android:id="@+id/viewLeagueInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:alpha="0.5"
+                    android:layout_marginHorizontal="16dp"
+                    android:background="@drawable/line_dash" />
+
+
+                <TextView
+                    android:id="@+id/tv_leage_manage_tool"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:padding="10dp"
+                    android:text="@string/league_manager_tool"
+                    android:textColor="@color/text_color_pg"
+                    android:textSize="16sp"
+                    app:drawableEndCompat="@drawable/ic_baseline_chevron_right_24" />
+
+                <View
+                    android:id="@+id/viewManageTool"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:alpha="0.5"
+                    android:layout_marginHorizontal="16dp"
+                    android:background="@drawable/line_dash" />
+
+
+            </LinearLayout>
+
+<!--            new chat section-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:id="@+id/card_settings"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="0dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginTop="10dp"
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="1dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="@string/settings"
+                            android:textColor="@color/black"
+                            android:layout_weight="1"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/go_right_arrow"
+                            app:tint="@color/black" />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:id="@+id/card_playoff_bracket"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="0dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginVertical="10dp"
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="1dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="@string/str_playoff_bracket"
+                            android:textColor="@color/black"
+                            android:layout_weight="1"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/go_right_arrow"
+                            app:tint="@color/black" />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="@string/str_chat"
+                    android:textColor="@color/black"
+                    android:textSize="22sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginHorizontal="1dp"
+                    android:id="@+id/rvStandingChannel"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:itemCount="5"
+                    tools:listitem="@layout/row_messages" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_marginTop="24dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="18dp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="@string/matchup"
+                        android:textColor="@color/black"
+                        android:textSize="22sp" />
+
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:id="@+id/rvMatchUp"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:itemCount="1"
+                    tools:listitem="@layout/row_league_matchup" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/llEast"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/horizontal_linear"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:visibility="visible">
+
+                                <TextView
+                                    android:layout_width="120dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:fontFamily="@font/roboto_bold"
+                                    android:text="@string/east"
+                                    android:paddingStart="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="@color/bg"
+                                    android:layout_marginBottom="10dp"
+                                    />
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/rv_players_name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:nestedScrollingEnabled="false"
+                                    android:orientation="vertical"
+                                    android:visibility="visible"
+                                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                                    tools:itemCount="5"
+                                    tools:listitem="@layout/league_standing_player_name" />
+
+                            </LinearLayout>
+
+                            <HorizontalScrollView
+                                android:id="@+id/hv_scroll_header"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:scrollbars="none">
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="-5dp"
+                                        android:clickable="false"
+                                        android:focusableInTouchMode="false"
+                                        android:orientation="horizontal"
+                                        android:paddingTop="10dp"
+                                        android:paddingBottom="10dp"
+                                        android:touchscreenBlocksFocus="false"
+                                        android:visibility="visible">
+
+                                        <TextView
+                                            android:layout_width="70dp"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/roboto_bold"
+                                            android:gravity="center"
+                                            android:text="@string/record"
+                                            android:textColor="@color/bg" />
+
+                                        <TextView
+                                            android:layout_width="70dp"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/roboto_bold"
+                                            android:gravity="center"
+                                            android:text="@string/win"
+                                            android:textColor="@color/bg" />
+
+                                        <TextView
+                                            android:layout_width="70dp"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/roboto_bold"
+                                            android:gravity="center"
+                                            android:text="@string/gb"
+                                            android:textColor="@color/bg" />
+
+                                        <TextView
+                                            android:layout_width="70dp"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/roboto_bold"
+                                            android:gravity="center"
+                                            android:text="@string/pf"
+                                            android:textColor="@color/bg" />
+
+                                        <TextView
+                                            android:layout_width="70dp"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/roboto_bold"
+                                            android:gravity="center"
+                                            android:text="@string/pa"
+
+                                            android:textColor="@color/bg" />
+
+                                        <TextView
+                                            android:layout_width="70dp"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/roboto_bold"
+                                            android:gravity="center"
+                                            android:text="@string/strk"
+                                            android:textColor="@color/bg" />
+
+
+                                        <TextView
+                                            android:layout_width="70dp"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/roboto_bold"
+                                            android:gravity="center"
+                                            android:maxLines="1"
+                                            android:ellipsize="end"
+                                            android:text="@string/playoff"
+                                            android:textColor="@color/bg" />
+
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="-12dp"
+                                        >
+                                        <androidx.recyclerview.widget.RecyclerView
+                                            android:id="@+id/rv_players_details"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:nestedScrollingEnabled="false"
+                                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                                            app:fastScrollEnabled="false"
+                                            android:visibility="visible"
+                                            tools:itemCount="5"
+                                            tools:listitem="@layout/league_standing" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </HorizontalScrollView>
+
+                        </LinearLayout>
+
+
+                        <androidx.core.widget.NestedScrollView
+                            android:id="@+id/scroll_nested"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/horizontal_linear"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+
+                                <HorizontalScrollView
+                                    android:id="@+id/hv_all_position"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@id/rv_players_column"
+                                    android:scrollbars="none">
+
+
+                                </HorizontalScrollView>
+
+                            </LinearLayout>
+
+                        </androidx.core.widget.NestedScrollView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llWest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/LL_c_position"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+
+                                android:visibility="visible">
+
+                                <TextView
+                                    android:layout_width="120dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:paddingStart="10dp"
+                                    android:fontFamily="@font/roboto_bold"
+                                    android:text="@string/west_teams"
+                                    android:textColor="@color/bg" />
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/rv_c_player"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:nestedScrollingEnabled="false"
+                                    android:orientation="vertical"
+                                    android:visibility="visible"
+                                    app:fastScrollEnabled="false"
+                                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                                    tools:itemCount="5"
+                                    tools:listitem="@layout/league_standing_west_player_name" />
+                            </LinearLayout>
+
+                            <HorizontalScrollView
+                                android:id="@+id/hv_c_position_header"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:scrollbars="none">
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+                                        android:clickable="false"
+                                        android:focusableInTouchMode="false"
+                                        android:orientation="horizontal"
+                                        android:paddingTop="10dp"
+                                        android:paddingBottom="10dp"
+                                        android:touchscreenBlocksFocus="false"
+                                        android:visibility="visible">
+
+                                        <TextView
+                                            android:layout_width="70dp"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/roboto_bold"
+                                            android:gravity="center"
+                                            android:text="@string/record"
+                                            android:textColor="@color/bg" />
+
+                                        <TextView
+                                            android:layout_width="70dp"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/roboto_bold"
+                                            android:gravity="center"
+                                            android:text="@string/win"
+
+                                            android:textColor="@color/bg" />
+
+                                        <!--<TextView
+                                            android:layout_width="70dp"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/roboto_bold"
+
+                                            android:gravity="center"
+                                            android:text="@string/gb"
+
+                                            android:textColor="@color/bg" />-->
+
+                                        <TextView
+                                            android:layout_width="70dp"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/roboto_bold"
+                                            android:gravity="center"
+
+                                            android:text="@string/pf"
+                                            android:textColor="@color/bg" />
+
+                                        <!--<TextView
+                                            android:layout_width="70dp"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/roboto_bold"
+                                            android:gravity="center"
+                                            android:text="@string/pa"
+
+                                            android:textColor="@color/bg" />-->
+
+                                        <TextView
+                                            android:layout_width="70dp"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/roboto_bold"
+                                            android:gravity="center"
+                                            android:text="@string/strk"
+                                            android:textColor="@color/bg" />
+
+                                        <TextView
+                                            android:layout_width="70dp"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/roboto_bold"
+                                            android:gravity="center"
+                                            android:maxLines="1"
+                                            android:ellipsize="end"
+                                            android:text="@string/playoff"
+                                            android:textColor="@color/bg" />
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="-5dp">
+
+                                        <androidx.recyclerview.widget.RecyclerView
+                                            android:id="@+id/rv_c_player_details"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:nestedScrollingEnabled="false"
+                                            android:visibility="visible"
+                                            app:fastScrollEnabled="false"
+                                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                                            tools:itemCount="5"
+                                            tools:listitem="@layout/league_west_standing_player_details" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </HorizontalScrollView>
+                        </LinearLayout>
+
+                        <androidx.core.widget.NestedScrollView
+                            android:id="@+id/scroll_c_position"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/horizontal_linear"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+
+                                <HorizontalScrollView
+                                    android:id="@+id/hv_c_position"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@id/rv_players_column"
+                                    android:scrollbars="none">
+
+
+                                </HorizontalScrollView>
+
+                            </LinearLayout>
+                        </androidx.core.widget.NestedScrollView>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

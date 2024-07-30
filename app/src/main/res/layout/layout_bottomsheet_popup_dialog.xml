@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#A3000000"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:gravity="center"
+        android:background="@drawable/rounded_corners_sheet">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_btm_sheet_logo"
+            android:src="@drawable/btmsheet_top_line"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/img_btmsheet_logo"
+            android:src="@drawable/logo"/>
+
+        <TextView
+            android:id="@+id/tv_popup_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="25dp"
+            android:text="Refer Friends. Earn Rewards"
+            android:textColor="@color/black"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/tv_popup_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center"
+            android:layout_marginHorizontal="25dp"
+            android:text="You and a friend earn coins when they sign up for Dream Team! Refer up to 10 people!"
+            android:textColor="@color/stroke_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_popup_ref_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="25dp"
+            android:visibility="gone"
+            android:text="Your Code: A678FB"
+            android:textColor="@color/bg"
+            android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/btn_sheet_ok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:background="@drawable/rounded_edittext"
+                android:focusable="true"
+                android:backgroundTint="@color/bg"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="center"
+                android:padding="15dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/yes"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/btn_sheet_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:background="@drawable/rounded_edittext"
+                android:focusable="true"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="center"
+                android:padding="15dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/no"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

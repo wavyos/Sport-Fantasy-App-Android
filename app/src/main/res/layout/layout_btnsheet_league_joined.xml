@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#A3000000"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:gravity="center"
+        android:background="@drawable/rounded_corners_sheet">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_btm_sheet_logo"
+            android:src="@drawable/btmsheet_top_line"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/img_btmsheet_logo"
+            android:src="@drawable/league_joined"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:layout_gravity="center">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/rounded_home_card_item"
+                android:backgroundTint="@color/bg" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto_medium"
+                android:paddingHorizontal="15dp"
+                android:gravity="center"
+                android:text="@string/str_league_joined"
+                android:textColor="@color/black"
+                android:textColorHint="@color/stroke_color"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginVertical="10dp"
+            android:text="@string/str_invite_thers_share"
+            android:textColor="@color/stroke_color"
+            android:textColorHint="@color/stroke_color"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_league_join_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/roboto_medium"
+            android:paddingHorizontal="15dp"
+            android:gravity="center"
+            android:text="Your code: 241123"
+            android:textColor="@color/bg"
+            android:textColorHint="@color/stroke_color"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/bg"
+            android:id="@+id/btn_copy_code"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="15dp"
+            android:background="@drawable/rounded_edittext">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/copy_link"/>
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/roboto_bold"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:text="@string/copy_invite_link"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/bg"
+            android:id="@+id/btn_share_league"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="15dp"
+            android:background="@drawable/rounded_edittext">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/code_copy"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:text="@string/copy_code"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/bg"
+            android:id="@+id/btn_share_wechat"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:gravity="center"
+            android:background="@drawable/rounded_edittext">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/share_league"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:text="@string/share_with_wechat"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#A3000000"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rounded_corners_sheet"
+        android:scaleType="fitXY"
+        android:src="@drawable/win_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/ll_win_view"
+        android:visibility="visible"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/btmsheet_top_line"
+            app:tint="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/iv_win_team1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/league_joined" />
+
+                <TextView
+                    android:id="@+id/tv_win_team_name_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/team_name"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_win_team_point_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="@string/_0"
+                    android:textColor="@color/text_color"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:text="VS"
+                android:textColor="@color/black"
+                android:textColorHint="@color/stroke_color"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/iv_win_team2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/team_two_img" />
+
+                <TextView
+                    android:id="@+id/tv_win_team_name_op"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/team_name"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_win_team_point_op"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="@string/_0"
+                    android:textColor="@color/text_color"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="15dp"
+            android:src="@drawable/outline_cup" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:text="@string/str_congratulations"
+            android:textAlignment="center"
+            android:textColor="@color/text_color"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_win_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginVertical="10dp"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center"
+            android:text="You beat team name, go rub it\nin their face."
+            android:textAlignment="center"
+            android:textColor="@color/stroke_color"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:backgroundTint="@color/bg">
+
+            <TextView
+                android:id="@+id/btn_accept_win_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="@string/accept"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/ll_lose_view"
+        android:paddingBottom="20dp"
+        android:background="@drawable/rounded_corners_sheet"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            app:cardCornerRadius="7dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="20dp"
+                android:background="#292929"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            android:id="@+id/iv_team1"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/league_joined" />
+
+                        <TextView
+                            android:id="@+id/tv_team_name_one"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="@string/team_name"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_team_point_one"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="@string/_0"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="10dp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="center"
+                        android:text="VS"
+                        android:textColor="@color/stroke_color"
+                        android:textColorHint="@color/stroke_color"
+                        android:textSize="24sp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            android:id="@+id/iv_team2"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/team_two_img" />
+
+                        <TextView
+                            android:id="@+id/tv_team_name_op"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="@string/team_name"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_team_point_op"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="@string/_0"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="15dp"
+            android:src="@drawable/skull" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:text="@string/str_maybe_next_time"
+            android:textAlignment="center"
+            android:textColor="@color/text_color"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_msg_btnsheet_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginVertical="10dp"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center"
+            android:text="Team name pummeled you."
+            android:textAlignment="center"
+            android:textColor="@color/stroke_color"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:backgroundTint="@color/bg">
+
+            <TextView
+                android:id="@+id/btn_accept_lose_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="@string/accept"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_btm_sheet_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/btmsheet_top_line"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        app:tint="@color/white" />
+
+</FrameLayout>

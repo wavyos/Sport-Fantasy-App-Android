@@ -1,0 +1,267 @@
+<resources>
+    <string name="app_name">Baller</string>
+    <string name="already_have_an_account_n_sign_in">Already Have an Account?\n<b><font color="#f87c46"> SIGN IN </font></b></string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="sign_up">Sign Up</string>
+    <string name="create_your_new_leauge">Create New League</string>
+    <string name="start_your_own_league_and_invite_friends">Start a league and invite friends</string>
+    <string name="join_league_and_play_with_public">Get placed in a league with other players</string>
+    <string name="join_your_new_leauge">Join Private League</string>
+    <string name="news">News</string>
+    <string name="top_player">TOP PLAYER</string>
+    <string name="create_your_own_leauge">Create Your Own League</string>
+    <string name="start_your_own_league_and_invite">Start your own league and invite</string>
+    <string name="team_name">Team Name</string>
+    <string name="_5_more_league_members_require_to_draft">5 more league members require to draft</string>
+    <string name="invite_member">Invite Member</string>
+    <string name="draft">Draft</string>
+    <string name="my_team">My Team</string>
+    <string name="invite_your_friends">Invite Your Friends</string>
+    <string name="copy_invite_code">Copy Invite Code</string>
+    <string name="copy_invite_link">Copy Link</string>
+    <string name="share_with_wechat">Share with WeChat</string>
+    <string name="notifications">Notifications</string>
+    <string name="stay_notified_about_new_course_updates_scoreboard_stats_and_new_friend_follows">Stay notified about new course updates, scoreboard stats and new friend follows.</string>
+    <string name="_12">12%</string>
+    <string name="auto_draft">Auto Draft</string>
+    <string name="_12_">12%</string>
+    <string name="import_">Import</string>
+    <string name="line_up">Line Up</string>
+    <string name="select">Select </string>
+    <string name="select_pg_s">Select</string>
+    <string name="select_pg">Select <b><font color="#6C63FF">PG </font></b> </string>
+    <string name="select_c">Select  <b><font color="#6C63FF">C  </font></b></string>
+    <string name="select_pf">Select <b><font color="#6C63FF">PF </font></b></string>
+    <string name="select_sf">Select <b><font color="#6C63FF">SF </font></b></string>
+    <string name="select_sg">Select <b><font color="#6C63FF">SG </font></b></string>
+    <string name="league_manager_tool">League Manager Tool</string>
+    <string name="cancel">Cancel</string>
+    <string name="create_league">Create League</string>
+    <string name="edit_basic_league_info">Edit Basic League Info</string>
+    <string name="save">Save</string>
+    <string name="login">Log In</string>
+    <string name="sign_up_later">Sign up later</string>
+    <string name="league_name">League Name</string>
+    <string name="need_a_postseason">Need A Postseason?</string>
+    <string name="entry_fee">Entry Fee</string>
+    <string name="free">Free</string>
+    <string name="paid">Paid</string>
+    <string name="select_fee">Select Fee</string>
+    <string name="edit_team_manager">Edit Team Manager</string>
+    <string name="starts_7_05_pm">Starts 7:05 PM</string>
+    <string name="_12_34_43">12:34:43</string>
+    <string name="_130">$130</string>
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
+    <string name="edit_basic_league">Edit Basic League</string>
+    <string name="your_password">Password</string>
+    <string name="forgot">Forgot Password?</string>
+    <string name="join_league_with_code">Please enter league code to join league</string>
+    <string name="welcome_antonio_george">Welcome Antonio George</string>
+    <string name="allow">Allow</string>
+    <string name="str_skip">Skip</string>
+    <string name="stephen_curry">Stephen Curry</string>
+    <string name="_30">#30</string>
+    <string name="golden_state_warrior">Golden State Warrior</string>
+    <string name="position_pg">Position PG</string>
+    <string name="team_name_team_name">Team Name : Team Name</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="password">Password</string>
+    <string name="terms_and_conditions">Terms and Conditions</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="continued">continue</string>
+    <string name="_2023_stats">2023 stats</string>
+    <string name="player">Player</string>
+    <string name="salary">Salary</string>
+    <string name="fgm">FGM</string>
+    <string name="_3pts">3Pts</string>
+    <string name="reb">Reb</string>
+    <string name="ft">FT</string>
+    <string name="dallas_pro_h2h_point_league">Dallas Pro H2H Point League</string>
+    <string name="week_1">Week 1</string>
+    <string name="_0">0</string>
+    <string name="hatton_0_0_0">Hatton | 0 - 0 - 0</string>
+    <string name="matchup">Matchup</string>
+    <string name="avg">AVG.</string>
+    <string name="points">Points</string>
+    <string name="score">Score</string>
+    <string name="biology_amp_the_scientific_method"><![CDATA[Biology & The Scientific Method]]></string>
+    <string name="lorem_ipsum_is_dollar_sit_amet_lorem_ipsum_is_dollar_sit_amet_lorem_ipsum_is_dollar_sit_amet_lorem_ipsum_is_dollar_sit_amet">Lorem ipsum is dollar sit amet Lorem ipsum is dollar sit amet Lorem ipsum is dollar sit amet Lorem ipsum is dollar sit amet</string>
+    <string name="s_curry">S Curry</string>
+    <string name="healthy">Healthy</string>
+    <string name="pg_sm">PG,SM</string>
+    <string name="add">Add</string>
+    <string name="_3">3</string>
+    <string name="_2">2</string>
+    <string name="_6_5">6.5</string>
+    <string name="_4_5">4.5</string>
+    <string name="_35">$35</string>
+    <string name="hashtag">#</string>
+    <string name="team_manager">Team Manager</string>
+    <string name="divison">Divison</string>
+    <string name="manager">Manager</string>
+    <string name="status">Status</string>
+
+    <string name="_1">1</string>
+    <string name="east">East</string>
+    <string name="invited">invited</string>
+    <string name="remove_manager">Remove Manager</string>
+    <string name="remove_user">Remove User</string>
+    <string name="virat_kohli">Kwon Chang-hoon</string>
+    <string name="_30_5">30.5</string>
+    <string name="_24_5">24.5</string>
+    <string name="yes">Yes</string>
+    <string name="no">No </string>
+    <string name="email">Email</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="edit_lineup">Edit Lineup</string>
+
+
+    <string name="OpenDrawer">Open Navigation Drawer</string>
+    <string name="CloseDrawer">Close Navigation Drawer</string>
+
+
+    <string name="EmailEmpty">Email can not be empty.</string>
+    <string name="EmailValid">Email is not valid.</string>
+    <string name="PasswordEmpty">Password can not be empty.</string>
+    <string name="PasswordWeek">Passwords must contain eight characters, including upper and lowercase letters, numbers, and symbols.</string>
+    <string name="success">Success</string>
+    <string name="f_name">Name can not be empty.</string>
+    <string name="terms">Terms and condition</string>
+    <string name="privacy">Privacy Policy</string>
+    <string name="hatton_let_s_play_game" translatable="false">Hatton | 0 - 0 - 0</string>
+    <string name="_10_15pm">晚上 10:15</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Sign out</string>
+    <string name="forgot_password">Forgot password</string>
+    <string name="areyousure">Are you sure you want to quit</string>
+
+    <string name="LeagueType" translatable="false">League Type</string>
+    <string name="fullname" translatable="false">Full Name</string>
+    <string name="please_enter_your_code_here" translatable="false">Please enter your code here</string>
+    <string name="join_league" translatable="false">Join League</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_player">Search Player</string>
+    <string name="search">search</string>
+    <string name="default_notification_channel_id">sports_default_channel_id</string>
+    <string name="roster">ROSTER</string>
+    <string name="player_c">PLAYER</string>
+    <string name="league">LEAGUE</string>
+    <string name="send_message">Send Message</string>
+    <string name="league_size">League Size</string>
+    <string name="choose_week">Choose Week</string>
+    <string name="public_">Public</string>
+    <string name="private_">Private</string>
+    <string name="edit_basic_info">Edit Basic League Info</string>
+    <string name="score_card">Score Card</string>
+    <string name="message_board">Message Board</string>
+    <string name="search_message">Search Message</string>
+    <string name="pos_rank">Pos Rank</string>
+    <string name="avg_point">Avg. Points</string>
+    <string name="dase">-</string>
+    <string name="min">Min</string>
+    <string name="rostered">%Rostered</string>
+    <string name="season_stats">SEASON STATS</string>
+    <string name="date">Date</string>
+    <string name="doubledas">--</string>
+    <string name="blk">BLK</string>
+    <string name="stl">STL</string>
+    <string name="tov">TOV</string>
+    <string name="ast">AST</string>
+    <string name="game_log">GAME LOG</string>
+    <string name="standing">Standing</string>
+    <string name="east_team">East Teams</string>
+    <string name="record">Record</string>
+    <string name="win">Win</string>
+    <string name="gb">GB</string>
+    <string name="pf">PF</string>
+    <string name="pa">PA</string>
+    <string name="strk">STRK</string>
+    <string name="playoff">PLAYOFF</string>
+    <string name="west_teams">West Teams</string>
+    <string name="summary">Summary</string>
+    <string name="current">current</string>
+    <string name="accept">Accept</string>
+    <string name="this_season">This Season</string>
+    <string name="last_7_games">Last 7 Games</string>
+    <string name="last_3_games">Last 3 Games</string>
+    <string name="last_game">Last Game</string>
+    <string name="scoreboard">Scoreboard</string>
+    <string name="league_info">League Info</string>
+    <string name="top_player_all_position">Top Player All Position</string>
+    <string name="all_players">ALL PLAYERS</string>
+    <string name="top_player_c_position">Top Player C Position</string>
+    <string name="top_player_pf_position">Top Player PF Position</string>
+    <string name="top_player_pg_position">Top Player PG Position</string>
+    <string name="top_player_sg_position">Top Player SG Position</string>
+    <string name="player_name">Player Name</string>
+    <string name="name">Name</string>
+    <string name="week">Week</string>
+    <string name="week_last_text">周</string>
+
+    <string name="is_sure_leave">Is it sure that you want to leave?</string>
+    <string name="is_sure_logout">Are you sure you want to log out?</string>
+    <string name="str_this_season">This Season</string>
+    <string name="str_last_7_games">Last 7 Games</string>
+    <string name="str_last_3_games">Last 3 Games</string>
+    <string name="str_last_game">Last Game</string>
+    <string name="str_member_required_draft_one">require to draft</string>
+    <string name="str_member_required_draft_two">more league members</string>
+    <string name="str_news">News</string>
+    <string name="str_year">Year</string>
+    <string name="str_wins">Wins</string>
+    <string name="str_losses">Losses</string>
+    <string name="str_finished_first">Finished 1st</string>
+    <string name="str_rank">Rank</string>
+    <string name="str_create_account">Create Account</string>
+    <string name="str_username_or_email">Username or Email</string>
+    <string name="str_fantasy_basketball_revloutionaized">Fantasy basketball revloutionaized</string>
+    <string name="str_dream_nteam">Dream\nTeam</string>
+    <string name="str_top_players_title">Top Players</string>
+    <string name="str_view_all"><u>View all &gt;</u></string>
+    <string name="str_index_no">No</string>
+    <string name="str_pos">Pos.</string>
+    <string name="str_work_in_progress">Work in progress</string>
+    <string name="today_stats">Today Stats</string>
+
+    <string name="community_tab_title">Community</string>
+    <string name="news_tab_title">News</string>
+    <string name="str_my_leagues">My Leagues</string>
+    <string name="str_enter_code">Enter Code</string>
+    <string name="str_join_your_private_league_by_entering_the_league_code">Join your private league by entering the league code</string>
+    <string name="str_enter_code_hint">Enter Code</string>
+    <string name="str_enter_code_orange_btn">Enter Code</string>
+    <string name="str_chat">Chat</string>
+    <string name="str_playoff_bracket">Playoff Bracket</string>
+    <string name="str_share_league">Share League</string>
+    <string name="copy_code">Copy Code</string>
+    <string name="str_invite_thers_share">Invite others to join the fun by copying the link or code</string>
+    <string name="str_submit_roster">Submit Roster</string>
+    <string name="str_next">Next</string>
+    <string name="str_congratulations">Congratulations.</string>
+    <string name="str_maybe_next_time">Maybe next time.</string>
+    <string name="PG">PG</string>
+    <string name="C">C</string>
+    <string name="PF">PF</string>
+    <string name="SF">SF</string>
+    <string name="SG">SG</string>
+    <string name="str_artical_down_desc">这一部分侧重于专业球员；那些在某个特定领域表现出色并对类别和ROTO（总积分）格式的球队提供特定价值的球员。提名是基于这些球员在哪个类别中有帮助，并将在赛季中轮换。 \n• 三分球：亚特兰大的博格丹·博格达诺维奇（65.2%）最终有了很高的入选率，但值得一提的是，过去两周他在三分球方面的附加值排名第五。国王队的蒙克在这方面排名第六，而热火队的邓肯·罗宾逊（15.6%）在这个投射影响指数中排名第十。 \n• 抢断：马蒂斯·塞伯尔（2.7%）又回到了每场比赛20分钟左右的水平，除了他荒谬的抢断率之外，限制了他的吸引力。近来，76人队的迪安东尼·梅尔顿（37.4%）在抢断方面表现出色，并为球队带来了一些三分和篮板。 \n• 盖帽：过去两周中，我们发现哈滕斯坦在盖帽方面的附加值排名第八，而快船队的伊维察·祖巴茨（53.4%）在篮下保护方面也很有帮助。 \n• 助攻：除了蒙克的不错助攻率之外，一旦犹他的基昂特·乔治（7.2%）的当前脚伤康复，你也可以关注他。</string>
+    <string name="your_code">Your code: </string>
+    <string name="str_daily_total">Daily Total</string>
+    <string name="str_today">Today</string>
+    <string name="str_no_message">No Message</string>
+    <string name="str_setting_invite_friends">Invite Friends</string>
+    <string name="str_setting_max_players">Max Players</string>
+    <string name="str_setting_members">Members</string>
+    <string name="str_setting_delete_league">Delete League</string>
+    <string name="str_promote_to_manager">Promote To Manager</string>
+    <string name="str_kick_from_league">Kick from league</string>
+    <string name="str_kick">Kick</string>
+    <string name="str_kick_user_msg">Are you sure you want to kick user? He will only be able to join again if invited.</string>
+    <string name="str_setting_delete_league_msg">Are you sure you want to delete this league? This cannot be undone.</string>
+    <string name="str_loose_the_league">Loose_The_Leauge</string>
+    <string name="str_league_joined">League joined</string>
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/ll_row_roster_player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_league"
+                android:textColor="@color/stroke_color"
+                android:layout_width="20dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="3dp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="--"
+                android:textSize="13sp" />
+
+            <!--<View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="5dp"
+                android:alpha="0.4"
+                android:background="@color/stroke_color"/>-->
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_player"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_gravity="top"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/logo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_player_name"
+                    style="@style/row_top_player"
+                    tools:ignore="RtlCompat"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/s_curry"
+                    android:textColor="@color/bg"
+                    android:textAlignment="textStart"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_positiontype"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto_regular"
+                    android:gravity="start"
+                    android:textSize="12sp"
+                    android:text="@string/add"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_news"
+                style="@style/row_top_player"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:text="@string/str_news"
+                android:visibility="gone"
+                android:layout_marginTop="-5dp"
+                android:textColor="@color/white"
+                android:background="@color/bg"
+                android:textSize="8sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:alpha="0.4"
+        android:visibility="gone"
+        android:layout_marginTop="-1dp"
+        android:background="@color/stroke_color" />
+
+
+</LinearLayout>

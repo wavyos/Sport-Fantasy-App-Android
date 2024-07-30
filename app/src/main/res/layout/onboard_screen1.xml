@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:visibility="visible"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/roboto_bold"
+        android:paddingVertical="5dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:textSize="20sp"
+        android:text="打造你的梦之队" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:visibility="visible"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/stroke_color"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:text="每天选5名球员\n￥100工资上限\n24:00之前截至选秀" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:src="@drawable/intro1"/>
+
+</LinearLayout>

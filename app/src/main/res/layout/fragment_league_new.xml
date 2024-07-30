@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    tools:context=".Fragment.newFlow.LeagueNewFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="50dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_select_position"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/custom_app_bar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--        salary cap view-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:background="@drawable/rounded_edittext"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingHorizontal="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="100"
+                        android:id="@+id/tv_total_salary"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text=" $"
+                        android:textColor="@color/bg"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_used_salary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text=" / 0"
+                        android:textColor="@color/black"
+                        android:alpha="0.5"
+                        android:textColorHint="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text=" $"
+                        android:textColor="@color/bg"
+                        android:alpha="0.5"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_start_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto_bold"
+                    android:gravity="start"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <!--        PG player view-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginTop="30dp">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="140dp"
+                        android:layout_height="110dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardPreventCornerOverlap="true"
+                        app:cardBackgroundColor="@color/white">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1.5"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:paddingStart="10dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="start"
+                                        android:id="@+id/tv_pg_position"
+                                        android:fontFamily="@font/roboto_bold"
+                                        android:textStyle="bold"
+                                        android:text="@string/PG"
+                                        android:textColor="@color/black"
+                                        android:textSize="11sp" />
+
+                                    <TextView
+                                        android:id="@+id/tv_pg_salary"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="start"
+                                        android:visibility="visible"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:background="@drawable/round_outline"
+                                        android:backgroundTint="@color/bg"
+                                        android:paddingHorizontal="8dp"
+                                        android:text="15$"
+                                        android:textColor="@color/white"
+                                        android:textSize="10sp" />
+
+                                    <TextView
+                                        android:id="@+id/tv_pg_ppg"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="start"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:background="@drawable/round_outline"
+                                        android:layout_marginTop="5dp"
+                                        android:visibility="visible"
+                                        android:backgroundTint="@color/bg"
+                                        android:paddingHorizontal="8dp"
+                                        android:text="25ppg"
+                                        android:textColor="@color/white"
+                                        android:textSize="10sp" />
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:id="@+id/img_PG"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/player_placeholder_img"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:background="#1F1F1F"
+                                android:gravity="center"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:id="@+id/tv_playername_PG"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto_bold"
+                                    android:text="No Name"
+                                    android:maxLines="1"
+                                    android:ellipsize="end"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="15sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:strokeColor="@color/white"
+                        android:id="@+id/card_add_edit_PG"
+                        android:layout_marginTop="10dp"
+                        app:strokeWidth="1dp"
+                        app:cardBackgroundColor="@color/black"
+                        app:cardCornerRadius="10dp">
+                        <TextView
+                            android:id="@+id/tv_add_edit_PG"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingHorizontal="15dp"
+                            android:paddingVertical="5dp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="Edit"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+
+                <!--        SG,SF player view-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginVertical="5dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="140dp"
+                            android:layout_height="110dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardBackgroundColor="@color/white">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:layout_weight="1.5"
+                                        android:paddingStart="10dp"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="start"
+                                            android:id="@+id/tv_sg_position"
+                                            android:fontFamily="@font/roboto_bold"
+                                            android:text="@string/SG"
+                                            android:textColor="@color/black"
+                                            android:textSize="11sp" />
+
+                                        <TextView
+                                            android:id="@+id/tv_sg_salary"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="start"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:background="@drawable/round_outline"
+                                            android:backgroundTint="@color/bg"
+                                            android:paddingHorizontal="8dp"
+                                            android:text="15$"
+                                            android:visibility="visible"
+                                            android:textColor="@color/white"
+                                            android:textSize="10sp" />
+
+                                        <TextView
+                                            android:id="@+id/tv_sg_ppg"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="start"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:background="@drawable/round_outline"
+                                            android:layout_marginTop="5dp"
+                                            android:backgroundTint="@color/bg"
+                                            android:paddingHorizontal="8dp"
+                                            android:text="25ppg"
+                                            android:visibility="visible"
+                                            android:textColor="@color/white"
+                                            android:textSize="10sp" />
+
+                                    </LinearLayout>
+
+                                    <ImageView
+                                        android:id="@+id/img_SG"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:src="@drawable/player_placeholder_img"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:background="#1F1F1F"
+                                    android:gravity="center"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:id="@+id/tv_playername_SG"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_bold"
+                                        android:text="No Name"
+                                        android:maxLines="1"
+                                        android:ellipsize="end"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/white"
+                                        android:textSize="15sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:strokeColor="@color/white"
+                            android:id="@+id/card_add_edit_SG"
+                            android:layout_marginTop="10dp"
+                            app:strokeWidth="1dp"
+                            app:cardBackgroundColor="@color/black"
+                            app:cardCornerRadius="10dp">
+                            <TextView
+                                android:id="@+id/tv_add_edit_SG"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:paddingHorizontal="15dp"
+                                android:paddingVertical="5dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="Edit"
+                                android:textColor="@color/white"
+                                android:textSize="13sp" />
+                        </com.google.android.material.card.MaterialCardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="140dp"
+                            android:layout_height="110dp"
+                            android:layout_alignParentEnd="true"
+                            app:cardCornerRadius="20dp"
+                            app:cardBackgroundColor="@color/white">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1.5"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:paddingStart="10dp"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="start"
+                                            android:id="@+id/tv_sf_position"
+                                            android:fontFamily="@font/roboto_bold"
+                                            android:text="@string/SF"
+                                            android:textColor="@color/black"
+                                            android:textSize="11sp" />
+
+                                        <TextView
+                                            android:id="@+id/tv_sf_salary"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="start"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:background="@drawable/round_outline"
+                                            android:backgroundTint="@color/bg"
+                                            android:paddingHorizontal="8dp"
+                                            android:text="15$"
+                                            android:visibility="visible"
+                                            android:textColor="@color/white"
+                                            android:textSize="10sp" />
+
+                                        <TextView
+                                            android:id="@+id/tv_sf_ppg"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="start"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:background="@drawable/round_outline"
+                                            android:layout_marginTop="5dp"
+                                            android:backgroundTint="@color/bg"
+                                            android:paddingHorizontal="8dp"
+                                            android:visibility="visible"
+                                            android:text="25ppg"
+                                            android:textColor="@color/white"
+                                            android:textSize="10sp" />
+
+                                    </LinearLayout>
+
+                                    <ImageView
+                                        android:id="@+id/img_SF"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:src="@drawable/player_placeholder_img"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:background="#1F1F1F"
+                                    android:gravity="center"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:id="@+id/tv_playername_SF"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_bold"
+                                        android:text="No Name"
+                                        android:maxLines="1"
+                                        android:ellipsize="end"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/white"
+                                        android:textSize="15sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:strokeColor="@color/white"
+                            android:id="@+id/card_add_edit_SF"
+                            android:layout_marginTop="10dp"
+                            app:strokeWidth="1dp"
+                            app:cardBackgroundColor="@color/black"
+                            app:cardCornerRadius="10dp">
+                            <TextView
+                                android:id="@+id/tv_add_edit_SF"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:paddingHorizontal="15dp"
+                                android:paddingVertical="5dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="Edit"
+                                android:textColor="@color/white"
+                                android:textSize="13sp" />
+                        </com.google.android.material.card.MaterialCardView>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <!--        PF,C player view-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingHorizontal="30dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="140dp"
+                            android:layout_height="110dp"
+                            android:layout_alignParentStart="true"
+                            app:cardCornerRadius="20dp"
+                            app:cardBackgroundColor="@color/white">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1.5"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:paddingStart="10dp"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="start"
+                                            android:id="@+id/tv_pf_position"
+                                            android:fontFamily="@font/roboto_bold"
+                                            android:text="@string/PF"
+                                            android:textColor="@color/black"
+                                            android:textSize="11sp" />
+
+                                        <TextView
+                                            android:id="@+id/tv_pf_salary"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="start"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:background="@drawable/round_outline"
+                                            android:backgroundTint="@color/bg"
+                                            android:paddingHorizontal="8dp"
+                                            android:visibility="visible"
+                                            android:text="15$"
+                                            android:textColor="@color/white"
+                                            android:textSize="10sp" />
+
+                                        <TextView
+                                            android:id="@+id/tv_pf_ppg"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="start"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:background="@drawable/round_outline"
+                                            android:layout_marginTop="5dp"
+                                            android:backgroundTint="@color/bg"
+                                            android:paddingHorizontal="8dp"
+                                            android:visibility="visible"
+                                            android:text="25ppg"
+                                            android:textColor="@color/white"
+                                            android:textSize="10sp" />
+
+                                    </LinearLayout>
+
+                                    <ImageView
+                                        android:id="@+id/img_PF"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:src="@drawable/player_placeholder_img"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:background="#1F1F1F"
+                                    android:gravity="center"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:id="@+id/tv_playername_PF"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_bold"
+                                        android:text="No Name"
+                                        android:maxLines="1"
+                                        android:ellipsize="end"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/white"
+                                        android:textSize="15sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:strokeColor="@color/white"
+                            android:id="@+id/card_add_edit_PF"
+                            android:layout_marginTop="10dp"
+                            app:strokeWidth="1dp"
+                            app:cardBackgroundColor="@color/black"
+                            app:cardCornerRadius="10dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:paddingHorizontal="15dp"
+                                android:id="@+id/tv_add_edit_PF"
+                                android:paddingVertical="5dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="Edit"
+                                android:textColor="@color/white"
+                                android:textSize="13sp" />
+                        </com.google.android.material.card.MaterialCardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="140dp"
+                            android:layout_height="110dp"
+                            android:layout_alignParentEnd="true"
+                            app:cardCornerRadius="20dp"
+                            app:cardBackgroundColor="@color/white">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1.5"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:paddingStart="10dp"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/tv_c_position"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="start"
+                                            android:fontFamily="@font/roboto_bold"
+                                            android:text="@string/C"
+                                            android:textColor="@color/black"
+                                            android:textSize="11sp" />
+
+                                        <TextView
+                                            android:id="@+id/tv_c_salary"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="start"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:background="@drawable/round_outline"
+                                            android:backgroundTint="@color/bg"
+                                            android:paddingHorizontal="8dp"
+                                            android:text="15$"
+                                            android:visibility="visible"
+                                            android:textColor="@color/white"
+                                            android:textSize="10sp" />
+
+                                        <TextView
+                                            android:id="@+id/tv_c_ppg"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="start"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:background="@drawable/round_outline"
+                                            android:layout_marginTop="5dp"
+                                            android:backgroundTint="@color/bg"
+                                            android:paddingHorizontal="8dp"
+                                            android:text="25ppg"
+                                            android:visibility="visible"
+                                            android:textColor="@color/white"
+                                            android:textSize="10sp" />
+
+                                    </LinearLayout>
+
+                                    <ImageView
+                                        android:id="@+id/img_C"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:src="@drawable/player_placeholder_img"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:background="#1F1F1F"
+                                    android:gravity="center"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:id="@+id/tv_playername_C"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_bold"
+                                        android:text="No Name"
+                                        android:maxLines="1"
+                                        android:ellipsize="end"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/white"
+                                        android:textSize="15sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </com.google.android.material.card.MaterialCardView>
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:strokeColor="@color/white"
+                            android:id="@+id/card_add_edit_C"
+                            android:layout_marginTop="10dp"
+                            app:strokeWidth="1dp"
+                            app:cardBackgroundColor="@color/black"
+                            app:cardCornerRadius="10dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:paddingHorizontal="15dp"
+                                android:id="@+id/tv_add_edit_C"
+                                android:paddingVertical="5dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="Edit"
+                                android:textColor="@color/white"
+                                android:textSize="13sp" />
+                        </com.google.android.material.card.MaterialCardView>
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/btn_submit_roster"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:strokeColor="@color/bg"
+                        android:layout_weight="1"
+                        android:layout_marginStart="10dp"
+                        app:strokeWidth="1dp"
+                        app:cardBackgroundColor="@color/bg"
+                        app:cardCornerRadius="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingHorizontal="15dp"
+                            android:paddingVertical="14dp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="@string/str_submit_roster"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+
+                    </com.google.android.material.card.MaterialCardView>
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:strokeColor="@color/white"
+                        android:layout_weight="1"
+                        android:layout_marginStart="10dp"
+                        android:id="@+id/btn_auto_draft"
+                        app:strokeWidth="1dp"
+                        app:cardBackgroundColor="@color/black"
+                        app:cardCornerRadius="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingHorizontal="15dp"
+                            android:paddingVertical="14dp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="Auto Draft"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+                    </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>

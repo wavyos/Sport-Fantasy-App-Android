@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#A3000000"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:gravity="center"
+        android:background="@drawable/rounded_corners_sheet">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_btm_sheet_logo"
+            android:src="@drawable/btmsheet_top_line"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/img_btmsheet_logo"
+            android:src="@drawable/league_joined"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:layout_gravity="center">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerInParent="true"
+                android:backgroundTint="@color/bg"
+                android:background="@drawable/rounded_home_card_item"/>
+            <TextView
+                android:id="@+id/tv_title_btmsheet_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto_bold"
+                android:paddingHorizontal="15dp"
+                android:gravity="center"
+                android:text="@string/str_enter_code"
+                android:textColor="@color/black"
+                android:textColorHint="@color/stroke_color"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_msg_btnsheet_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginVertical="10dp"
+            android:text="@string/str_join_your_private_league_by_entering_the_league_code"
+            android:textColor="@color/stroke_color"
+            android:textColorHint="@color/stroke_color"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/edt_btm_sheet_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext"
+            android:hint="@string/str_enter_code_hint"
+            android:fontFamily="@font/roboto_medium"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/stroke_color"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/tv_popup_ref_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="25dp"
+            android:visibility="gone"
+            android:text="Your Code: A678FB"
+            android:textColor="@color/bg"
+            android:textSize="21sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/bg"
+            android:background="@drawable/rounded_edittext">
+
+            <TextView
+                android:id="@+id/btn_sheet_three_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="@string/str_enter_code_orange_btn"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_toEndOf="@id/btn_sheet_three_ok"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/go_right_arrow"/>
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/btn_sheet_three_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:background="@drawable/rounded_edittext"
+            android:focusable="true"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"
+            android:padding="15dp"
+            android:visibility="gone"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/cancel"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

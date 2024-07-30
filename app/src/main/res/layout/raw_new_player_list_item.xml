@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_title_view"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/bg" />
+
+        <TextView
+            android:id="@+id/tv_player_name_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/bg"
+            android:text="@string/name"/>
+
+        <TextView
+            android:id="@+id/tv_player_salary_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:textSize="14sp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:textColor="@color/bg"
+            android:text="@string/salary"/>
+
+        <TextView
+            android:id="@+id/tv_player_ppg_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/bg"
+            android:text="PPG"/>
+
+        <TextView
+            android:id="@+id/tv_player_points_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/bg"
+            android:text="@string/points"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_pick_unpick_player"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="center"
+                android:background="@drawable/orange_rounded_border"
+                android:textColor="@color/bg"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_player_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:civ_border_overlay="true"
+                android:hapticFeedbackEnabled="true"
+                app:civ_border_width="0dp"
+                android:padding="5dp"
+                android:src="@mipmap/ic_launcher_app_main_round"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/tv_player_name"
+                android:textSize="16sp"
+                android:maxLines="1"
+                android:alpha="0.6"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_player_salary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:alpha="0.6"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/black"
+            android:text="@string/salary"/>
+
+        <TextView
+            android:id="@+id/tv_player_ppg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:textSize="16sp"
+            android:alpha="0.6"
+            android:gravity="center"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/black"
+            android:text="PPG"/>
+
+        <TextView
+            android:id="@+id/tv_player_points"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:textSize="16sp"
+            android:alpha="0.6"
+            android:gravity="center"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/black"
+            android:text="@string/points"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#e7e7ea"
+    android:id="@+id/kkc"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_player_image"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        app:civ_border_overlay="true"
+        android:hapticFeedbackEnabled="true"
+        app:civ_border_width="1dp"
+        android:padding="5dp"
+
+        android:src="@mipmap/ic_launcher_app_main_round"/>
+
+    <TextView
+        android:id="@+id/tv_player_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="21sp"
+        android:layout_toRightOf="@+id/civ_player_image"
+        android:fontFamily="@font/roboto_bold"
+        android:textColor="@color/bg"
+        android:text="@string/player_name"/>
+
+
+    <LinearLayout
+        android:id="@+id/ll_child"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginEnd="20dp"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@id/ic_remove_player">
+
+        <TextView
+            android:id="@+id/tv_salary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/black"
+            android:text="$15.5"/>
+
+        <TextView
+            android:id="@+id/tv_salary_percentage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/black"
+            android:alpha="0.7"
+            android:text="Salary"/>
+
+
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ic_remove_player"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/ic_baseline_remove_circle_24" />
+
+
+
+
+
+
+</RelativeLayout>

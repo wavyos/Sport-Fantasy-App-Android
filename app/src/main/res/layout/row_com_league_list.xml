@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="10dp"
+        android:outlineAmbientShadowColor="@color/bg"
+        android:outlineSpotShadowColor="@color/bg"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="10dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/cvDrComingLeauge"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/league_drname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center_vertical"
+                    android:text="League Name"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="end"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="#3C000000"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="center_vertical"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="15dp"
+                            android:text="@string/week"
+                            android:textColor="@color/white"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/current_drweeek"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="-10dp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="center_vertical"
+                            android:paddingEnd="10dp"
+                            android:text="1"
+                            android:textColor="@color/white"
+                            android:textSize="16dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:visibility="visible"
+                    android:id="@+id/llTestDailyDraft"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/iv_img"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_tshirt" />
+
+                        <TextView
+                            android:id="@+id/tv_team_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:hint="@string/team_name"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
+                            android:textSize="21sp" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/roboto_light"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:visibility="gone"
+                    android:id="@+id/llFirstPosition"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/iv_imgFirst"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/ic_tshirt" />
+
+                            <TextView
+                                android:id="@+id/tv_team_nameFirst"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:layout_marginStart="10dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:hint="@string/team_name"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textSize="21sp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:paddingHorizontal="20dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_win"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:fontFamily="@font/roboto_medium"
+                                android:hint="Win"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/tv_lose"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="end"
+                                android:fontFamily="@font/roboto_medium"
+                                android:hint="Lose"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_tshirt" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:paddingHorizontal="15dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+
+                        >
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/btn_drdraft"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_marginTop="10dp"
+                            app:cardBackgroundColor="@color/bg"
+                            app:cardCornerRadius="15dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:paddingHorizontal="35dp"
+                                android:text="@string/draft"
+                                android:textColor="@color/white"
+                                android:textSize="16dp" />
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/btn_drmatchup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            app:cardBackgroundColor="@color/bg"
+                            app:cardCornerRadius="15dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:paddingHorizontal="35dp"
+                                android:text="@string/matchup"
+                                android:textColor="@color/white"
+                                android:textSize="16dp" />
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ll_card_footer"
+                    android:visibility="visible"
+                    android:orientation="vertical">
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="0.8dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:alpha="0.5"
+                        android:background="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_drteam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/my_team"
+                        android:textColor="@color/bg"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</layout>
+

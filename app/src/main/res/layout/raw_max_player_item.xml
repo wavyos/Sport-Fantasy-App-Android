@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="@drawable/rounded_edittext"
+    android:layout_margin="5dp"
+    android:id="@+id/ll_max_player_item"
+    android:padding="10dp"
+    android:layout_height="50dp">
+
+
+    <TextView
+        android:id="@+id/tv_player_number"
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/roboto_medium"
+        android:text="1"
+        android:textColor="@color/text_color"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_player_name"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Jack1 Jack1"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="@color/text_color"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_player_post"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Member"
+        android:textColor="@color/stroke_color"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/outline_edit_24"/>
+
+</LinearLayout>

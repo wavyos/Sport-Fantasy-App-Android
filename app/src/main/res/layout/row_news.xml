@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp"
+    android:outlineSpotShadowColor="@color/black"
+    android:outlineAmbientShadowColor="@color/white"
+    android:elevation="10dp"
+    app:cardUseCompatPadding="true"
+    app:cardPreventCornerOverlap="true"
+    app:cardMaxElevation="10dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@mipmap/basket" />
+
+    <LinearLayout
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:padding="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="21sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center"
+            android:text="@string/biology_amp_the_scientific_method"
+            />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:fontFamily="@font/roboto_light"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/lorem_ipsum_is_dollar_sit_amet_lorem_ipsum_is_dollar_sit_amet_lorem_ipsum_is_dollar_sit_amet_lorem_ipsum_is_dollar_sit_amet"/>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
